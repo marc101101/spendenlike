@@ -3,67 +3,49 @@ extends ../layout.pug
 block nav
   .brand
     img(src="assets/images/logo-white.png")
-    .text Hackaburg
+    .text.white SpendenLike e.V.
 
   ul
     li
-      a(href="#about") About
+      a(href="#about") Unser Blog
     li
-      a(href="#tracks") Tracks
+      a(href="#tracks") Mitglied werden
     li
-      a(href="#sponsors") Sponsors
+      a(href="#sponsors") Spenden
     li
-      a(href="#hackaburg-2017") Hackaburg 2017
-    li
-      a(href="#schedule") Schedule
-    li
-      a(href="#teaser2018") Teaser 2018
-    li
-      a(href="#venue") Venue
-    li
-      a(href="#faq") FAQ
-    li
-      a(href="#team") Team
-
-  a.mlh-trust-badge(href="https://mlh.io/seasons/eu-2018/events?utm_source=eu-2018&utm_medium=TrustBadge&utm_campaign=eu-2018&utm_content=gray", target="_blank")
-    img(src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/gray.svg", alt="Major League Hacking 2018 Hackathon Season")
+      a(href="#hackaburg-2017") FB / Insta
 
 block content
   section.accent.block
     .container
       .intro
         .title
-          h1 hackaburg 2018
+          h1 SpendenLike
 
         .subtitle
-          h3 join the adventure hackathon
-          h3 TechBase Regensburg
-            span.date 25. - 27. May 2018
-
-        .backers
-          a(href="https://www.digitale-oberpfalz.de", target="_blank")
-            img(src="assets/images/dgo.svg")
-
-          a(href="http://www.mittelbayerische.de", target="_blank")
-            img(src="assets/images/mz.svg")
+          h3 Wir geben sozialen Projekten eine Bühne.
         
-        a(href="https://slack.hackaburg.de", target="_blank") JOIN SLACK 
+        a.inverted.button(href="mailto:partner@hackaburg.de") Kontakt
+        a.regular.button(href="mailto:partner@hackaburg.de") Wer sind wir
 
   a.upwards.right.white.triangle(name="about")
-    .castle.image.container
-      img.floating(src="assets/images/hackaburg.svg")
+    .hand.image.container
+      img(src="assets/images/header.png")
 
   section.white.block
     .container
       .about
         .accent.section.heading 
           .title
-            h2 About
+            h2 Von Anfang an
           .subtitle
-            h3 What is hackaburg?
+            h3 Unsere Idee
 
-          p.tldr Hackaburg is a meeting point* for over 100 developers, designers, and entrepreneurs from around the world.
-          p * of 21 nationalities to be exact and a hackathon experience like no other.
+          p.tldr Wir sind ein Verein aus jungen Menschen, die etwas zurück geben wollen.
+          .subtitle
+            h3 Unsere Idee
+
+          p.tldr Wir sind ein Verein aus jungen Menschen, die etwas zurück geben wollen.
 
   a.downwards.right.white.triangle(name="tracks")
 

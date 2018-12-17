@@ -5,9 +5,9 @@ a.button {
   padding: 0.5rem 2rem;
 
   border-radius: 10rem;
-  border: 2px solid @color-accent;
+  border: 2px solid white;
 
-  color: @color-accent;
+  color: white;
   background-color: transparent;
 
   font-weight: bold;
@@ -24,10 +24,18 @@ a.button {
     background-color: @color-accent;
   }
 
+  &.regular{
+    &:hover{
+      background-color: white;
+      color: @color-accent;
+    }
+  }
+
   &.inverted {
     border-color: #fff;
     background-color: #fff;
     color: @color-accent;
+    margin-right: 1rem;
 
     &:hover {
       background-color: transparent;

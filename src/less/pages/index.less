@@ -1,9 +1,11 @@
 .intro {
-  margin: 12vh 0rem;
+  margin: 10rem 0rem;
+
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 500;
+    text-transform: capitalize;
   }
 
   .subtitle {
@@ -36,18 +38,17 @@
   cursor: default !important;
 }
 
-.castle.image.container img,
+.hand.image.container img,
 .rocket.image.container img {
   position: absolute;
-
   z-index: @z-triangle-content;
 }
 
-.castle.image.container img {
-  width: 22rem;
-
-  bottom: -6rem;
-  right: 0rem;
+.hand.image.container img {
+  width: 29rem;
+  bottom: 1rem;
+  right: -2rem;
+  z-index: -1;
 }
 
 .rocket.image.container img {
@@ -164,11 +165,11 @@
     }
   }
 
-  .castle.image.container img {
-    width: 80vw;
-    max-height: 65vh;
-
-    right: 10vw;
+  .hand.image.container img {
+    width: 25rem;
+    bottom: 1rem;
+    right: -3rem;
+    z-index: -1;
   }
 
   .mlh-trust-badge {
