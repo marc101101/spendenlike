@@ -33,19 +33,29 @@ block content
       img(src="assets/images/header.png")
 
   section.white.block
-    .container
-      .about
-        .accent.section.heading 
-          .title
-            h2 Von Anfang an
-          .subtitle
-            h3 Unsere Idee
-
-          p.tldr Wir sind ein Verein aus jungen Menschen, die etwas zurück geben wollen.
-          .subtitle
-            h3 Unsere Idee
-
-          p.tldr Wir sind ein Verein aus jungen Menschen, die etwas zurück geben wollen.
+    .info
+      .container
+        .section.heading
+          .subtitle 
+            h2 Wer sind wir ?
+      .container
+        .centered.text.condensed.grid
+          .row
+            .right.aligned.text.col-33
+              .level2.partner
+                a(href="", target="_blank")
+                  img(src="assets/images/idea.png")
+                  h3 Unsere Idee
+            .col-33
+              .level2.partner
+                a(href="", target="_blank")
+                  img(src="assets/images/map.png")
+                  h3 Vor Ort
+            .left.aligned.text.col-33
+              .level2.partner
+                a(href="", target="_blank")
+                  img(src="assets/images/speak.png")
+                  h3 Präsent
 
   a.downwards.right.white.triangle(name="tracks")
 
@@ -54,7 +64,7 @@ block content
       .container
         .inverted.section.heading
           .title
-            h2 Tracks
+            h2 Statement
 
           .subtitle
             h3 How you can change the future
@@ -62,52 +72,6 @@ block content
         p The new tracks introduced this year offer you the possibility to challenge in the category of interest. 
           br 
           | The tracks listed below are provisional. We hope for your feedback, to make the individual topics interesting for you.
-
-        .grid
-          .row
-            .col-50
-              a.track(href="tracks.html#digital-journalism", style="background-image: url(assets/images/tracks/digital-journalism.jpg);")
-                .title Digital Journalism
-            .col-50
-              a.track(href="tracks.html#security", style="background-image: url(assets/images/tracks/security.jpg);")
-                .title Security
-          .row
-            .col-50
-              a.track(href="tracks.html#smart-society", style="background-image: url(assets/images/tracks/smart-society.jpg);")
-                .title Smart Society
-            .col-50
-              a.track(href="tracks.html#e-health", style="background-image: url(assets/images/tracks/e-health.jpg);")
-                .title E-Health
-          .row
-            .col-100
-              a.track(href="tracks.html#free-choice", style="background-image: url(assets/images/tracks/free-choice.jpg);")
-                .title Free Choice
-
-
-        .challenges
-          .inverted.section.heading
-            .title
-              h2 NEW
-
-            .subtitle
-              h3 Partner Challenges
-
-          p Starting this year, our partners can offer special challenges in each track which you can compete in as well. The partners providing the challenges can award special prices and they may provide you with some extras throughout the event, e.g. special hardware or APIs.
-
-          ul
-            li
-              a(href="tracks.html#challenge-dracoon") Dracoon &mdash; document classification challenge
-            li
-              a(href="tracks.html#challenge-vector") Vector &mdash; hardware challenge
-            li
-              a(href="tracks.html#challenge-consolinno") Consolinno &mdash; smart contracts in local heating networks challenge
-
-          .centered.challenges.text
-            a.inverted.button(href="tracks.html#challenges") Explore the Challenges
-
-  a.upwards.left.white.triangle(name="sponsors")
-    //- .rocket.image.container
-    //-   img(src="assets/images/moon-landing.png")
 
   section.white.block
     .sponsors
