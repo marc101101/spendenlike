@@ -3,687 +3,85 @@ extends ../layout.pug
 block nav
   .brand
     img(src="assets/images/logo-white.png")
-    .text Hackaburg
+    .text.white SpendenLike e.V.
 
   ul
     li
-      a(href="#about") About
+      a(href="blog.html") Unser Blog
     li
-      a(href="#tracks") Tracks
+      a(href="mitglied.html") Mitglied werden
     li
-      a(href="#sponsors") Sponsors
+      a(href="spenden.html") Spenden
     li
-      a(href="#hackaburg-2017") Hackaburg 2017
-    li
-      a(href="#schedule") Schedule
-    li
-      a(href="#teaser2018") Teaser 2018
-    li
-      a(href="#venue") Venue
-    li
-      a(href="#faq") FAQ
-    li
-      a(href="#team") Team
-
-  a.mlh-trust-badge(href="https://mlh.io/seasons/eu-2018/events?utm_source=eu-2018&utm_medium=TrustBadge&utm_campaign=eu-2018&utm_content=gray", target="_blank")
-    img(src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/gray.svg", alt="Major League Hacking 2018 Hackathon Season")
+      a(href="#hackaburg-2017") FB / Insta
 
 block content
   section.accent.block
     .container
       .intro
         .title
-          h1 hackaburg 2018
+          h1 SpendenLike
 
         .subtitle
-          h3 join the adventure hackathon
-          h3 TechBase Regensburg
-            span.date 25. - 27. May 2018
-
-        .backers
-          a(href="https://www.digitale-oberpfalz.de", target="_blank")
-            img(src="assets/images/dgo.svg")
-
-          a(href="http://www.mittelbayerische.de", target="_blank")
-            img(src="assets/images/mz.svg")
+          h3 Wir geben sozialen Projekten eine Bühne.
         
-        a(href="https://slack.hackaburg.de", target="_blank") JOIN SLACK 
+        a.inverted.button(href="mailto:partner@hackaburg.de") Spenden
+        a.regular.button(href="mailto:partner@hackaburg.de") Mitglied werden
 
   a.upwards.right.white.triangle(name="about")
-    .castle.image.container
-      img.floating(src="assets/images/hackaburg.svg")
+    .hand.image.container
+      img(src="assets/images/header.png")
 
   section.white.block
-    .container
-      .about
-        .accent.section.heading 
-          .title
-            h2 About
-          .subtitle
-            h3 What is hackaburg?
+    .info
+      .container
+        .section.heading
+          .subtitle 
+            h2 Wer sind wir ?
+      .container
+        .centered.text.condensed.grid
+          .row
+            .right.aligned.text.col-33
+              .level2.partner
+                a(href="", target="_blank")
+                  img(src="assets/images/idea.png")
+                  h3 Unsere Idee
+            .col-33
+              .level2.partner
+                a(href="", target="_blank")
+                  img(src="assets/images/speak.png")
+                  h3 Influencer als Sprachrohr
+            .left.aligned.text.col-33
+              .level2.partner
+                a(href="", target="_blank")
+                  img(src="assets/images/map.png")
+                  h3 Vor Deiner Haustür
 
-          p.tldr Hackaburg is a meeting point* for over 100 developers, designers, and entrepreneurs from around the world.
-          p * of 21 nationalities to be exact and a hackathon experience like no other.
-
-  a.downwards.right.white.triangle(name="tracks")
+  a.downwards.right.white.triangle(name="wersindwir")
 
   section.accent.block
     .tracks
       .container
         .inverted.section.heading
-          .title
-            h2 Tracks
+          .title.center
+            h2 Das Sprachrohr
 
-          .subtitle
-            h3 How you can change the future
-
-        p The new tracks introduced this year offer you the possibility to challenge in the category of interest. 
-          br 
-          | The tracks listed below are provisional. We hope for your feedback, to make the individual topics interesting for you.
-
-        .grid
-          .row
-            .col-50
-              a.track(href="tracks.html#digital-journalism", style="background-image: url(assets/images/tracks/digital-journalism.jpg);")
-                .title Digital Journalism
-            .col-50
-              a.track(href="tracks.html#security", style="background-image: url(assets/images/tracks/security.jpg);")
-                .title Security
-          .row
-            .col-50
-              a.track(href="tracks.html#smart-society", style="background-image: url(assets/images/tracks/smart-society.jpg);")
-                .title Smart Society
-            .col-50
-              a.track(href="tracks.html#e-health", style="background-image: url(assets/images/tracks/e-health.jpg);")
-                .title E-Health
-          .row
-            .col-100
-              a.track(href="tracks.html#free-choice", style="background-image: url(assets/images/tracks/free-choice.jpg);")
-                .title Free Choice
-
-
-        .challenges
-          .inverted.section.heading
-            .title
-              h2 NEW
-
-            .subtitle
-              h3 Partner Challenges
-
-          p Starting this year, our partners can offer special challenges in each track which you can compete in as well. The partners providing the challenges can award special prices and they may provide you with some extras throughout the event, e.g. special hardware or APIs.
-
-          ul
-            li
-              a(href="tracks.html#challenge-dracoon") Dracoon &mdash; document classification challenge
-            li
-              a(href="tracks.html#challenge-vector") Vector &mdash; hardware challenge
-            li
-              a(href="tracks.html#challenge-consolinno") Consolinno &mdash; smart contracts in local heating networks challenge
-
-          .centered.challenges.text
-            a.inverted.button(href="tracks.html#challenges") Explore the Challenges
-
-  a.upwards.left.white.triangle(name="sponsors")
-    //- .rocket.image.container
-    //-   img(src="assets/images/moon-landing.png")
-
-  section.white.block
-    .sponsors
-      .container
-        .accent.section.heading
-          .title
-            h2 Sponsors
-
-          .subtitle
-            h3 Partner with us
-
-        .centered.text.condensed.grid
-          .row
-            .col-100
-              .level1.partner
-                a(href="https://www.continental-corporation.com", target="_blank")
-                    img(src="assets/images/sponsors/continental.jpg")
-
-          .row
-            .right.aligned.text.col-33
-              .level2.partner
-                a(href="https://www.syskron.com/", target="_blank")
-                  img(src="assets/images/sponsors/syskron.jpg")
-            .col-33
-              .level2.partner
-                a(href="https://www.intive.com", target="_blank")
-                  img.scaled(src="assets/images/sponsors/intive.jpg")
-            .left.aligned.text.col-33
-              .level2.partner
-                a(href="https://www.team-con.de/", target="_blank")
-                  img.scaled(src="assets/images/sponsors/tcon.jpg")
-
+          .subtitle.center
+            h3 Erster Influencer
+            
+        .grid    
           .row
             .col-33
-              .level3.partner
-                a(href="https://www.braincourt.com", target="_blank")
-                  img(src="assets/images/sponsors/braincourt.jpg")
-            .col-33
-              .level3.partner
-                a(href="http://biopark-regensburg.de/", target="_blank")
-                  img(src="assets/images/sponsors/biopark.jpg")
-            .col-33
-              .level3.partner
-                a(href="https://www.witt-gruppe.eu", target="_blank")
-                  img(src="assets/images/sponsors/witt.jpg")
-          .row  
-            .col-33
-              .level3.partner
-                a(href="https://vector.com", target="_blank")
-                  img(src="assets/images/sponsors/vector.jpg")
-            .col-33
-              .level3.partner
-                a(href="https://www.consol.de/", target="_blank")
-                  img(src="assets/images/sponsors/consol.jpg")
-            .col-33
-              .level3.partner
-                a(href="https://www.conrad.de/", target="_blank")
-                  img(src="assets/images/sponsors/conrad.jpg")
+              img.influencer(src="assets/images/julian.png")
+              p.influencer Julian Franklin
 
-          .row
-            .left.aligned.text.col-20
-              .level4.partner
-                a(href="http://www.horsch.com/", target="_blank")
-                  img(src="assets/images/sponsors/horsch.jpg")
-            .left.aligned.text.col-20
-              .level4.partner
-                a(href="https://www.bhs-world.com/", target="_blank")
-                  img(src="assets/images/sponsors/bhs.jpg")
-            .col-20
-              .left.aligned.text.col-20
-              .level4.partner
-                a(href="https://www.reinhausen.com", target="_blank")
-                  img(src="assets/images/sponsors/mr.jpg")
-            .right.aligned.text.col-20
-              .level4.partner
-                a(href="https://www.dracoon.com/", target="_blank")
-                  img(src="assets/images/sponsors/dracoon.jpg")
-            .right.aligned.text.col-20
-              .level4.partner
-                 a(href="http://hackp.ac/mlh-stickermule-hackathons", target="_blank")
-                  img(src="assets/images/sponsors/sticker_mule.jpg")
-          
-          .row
-            .left.aligned.text.col-20
-              .level5.partner
-                a(href="https://www.kukuluru-media.com/", target="_blank")
-                  img(src="assets/images/sponsors/kukuluru.jpg")
-            .left.aligned.text.col-20
-              .level5.partner
-                a(href="https://cipsoft.com/index.php/de/", target="_blank")
-                  img(src="assets/images/sponsors/cipsoft.jpg")
-            .col-20
-              .left.aligned.text.col-20
-              .level5.partner
-                a(href="https://www.omniga.de/", target="_blank")
-                  img(src="assets/images/sponsors/omniga.jpg")
-            .col-20
-              .left.aligned.text.col-20
-              .level5.partner
-                a(href="http://www.bischofshof.de/", target="_blank")
-                  img(src="assets/images/sponsors/bischofshof.jpg")
-            .col-20
-              .left.aligned.text.col-20
-              .level5.partner
-                a(href="https://www.fritz-kola.de/", target="_blank")
-                  img(src="assets/images/sponsors/fritzkola.jpg")
-          
-        .become.sponsor
-          .centered.text
-            p Interested in joining Hackaburg? 
-            a.accent.button(href="mailto:partner@hackaburg.de") Become a partner
+            .col-67.quote
+              p "Hi, ich bin Julian! sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
 
-
-  a.downwards.right.white.triangle(name="hackaburg-2017")
-
-  section.accent.block
-    .media
-      video(src="assets/images/video.mp4", loop, autoplay, muted)
-      .container
-        .description
-          .inverted.accent.section.heading
-            .title
-              h2 Hackaburg 2017
-
-            .subtitle
-              h3 What happened last year
-
-          p 120 participants from all over Germany together with 15 Sponsors transformed the facilities of OTH Regensburg into a home for 20 Teams working on a large variety of projects. The best teams got rewarded with prizes of more than 6.000 € in total value and everyone got new experiences, met new friends and had an enjoyable weekend.
-
-          p
-            a.accent.text(href="https://www.youtube.com/watch?v=pRULo5j4gZo", target="_blank") Watch last year's after movie &raquo;
-
-  a.upwards.left.accent.triangle(name="schedule")
-
-  section.accent.block
-    .schedule
-      .container
-        .inverted.section.heading
-          .title
-            h2 Schedule
-          .subtitle
-            h3 When and what
-
-        .timetable.grid
-          .row
-            .day.col-33
-              .date Fri, 25.05.2018
-              .events
-                .accent.event
-                  .title
-                    h4 Registration
-                  .time 3pm - 4pm
-
-                .gray.event
-                  .title
-                    h4 Opening Ceremony
-                  .time 4.15pm - 5pm
-
-                .gray.event
-                  .title
-                    h4 Keynotes
-                  .time 5pm - 5.30pm
-
-                .gray.event
-                  .title
-                    h4 Idea Pitches
-                  .time 5.30pm - 6.20pm
-
-                .gray.event
-                  .title
-                    h4 Further important information
-                  .time 6.20pm - 6.30pm
-
-                .white.event
-                  .title
-                    h4 Dinner
-                  .time 6.30pm - 7.15pm
-
-                .accent.event
-                  .title
-                    h4 “3, 2, 1… HACK!” & GetTogether
-                  .time 7.15pm - 
-
-            .day.col-33
-              .date Sat, 26.05.2018
-              .events
-                .white.event
-                  .title
-                    h4 Breakfast
-                  .time 8.30am - 10am
-
-                .accent.event
-                  .title
-                    h4 Career fair 
-                  .time 8.30am - 5pm
-
-                .accent.event
-                  .title
-                    h4 Workshop Consol: Off to a new island - Kotlin for backend development
-                  .time 10am - 12pm
-
-                .white.event
-                  .title
-                    h4 Lunch
-                  .time 12am - 2pm
-
-                .accent.event
-                  .title
-                    h4 Workshop Continental: CI/CD with Jenkins X
-                  .time 12.30am - 2pm
-
-                .accent.event
-                  .title
-                    h4 Workshop BrainCourt: Machine Learning with KNIME
-                  .time 1pm - 3pm
-
-                .accent.event
-                  .title
-                    h4 Workshop Witt Weiden: Kubernetes-Cluster with 6 Raspberry Pis 
-                  .time 3pm - 5pm
-
-                .white.event
-                  .title
-                    h4 Dinner
-                  .time 6pm - 7.30pm
-
-            .day.col-33
-              .date Sun, 27.05.2018
-              .events
-                .accent.event
-                  .title
-                    h4 Hacking continues …
-                  .time 12pm - 2pm
-
-                .white.event
-                  .title
-                    h4 Breakfast
-                  .time 8.30am - 10am
-
-                .accent.event
-                  .title
-                    h4 Hand in your projects
-                  .time 10am - 11am
-
-                .black.event
-                  .title
-                    h4 Hacking closes
-                  .time 11am
-                
-                .accent.event
-                  .title
-                    h4 Prejudging expo for judges
-                  .time 11.15am - 12.30am
-
-                .white.event
-                  .title
-                    h4 Lunch
-                  .time 12.30am - 13.30pm
-
-                .black.event
-                  .title
-                    h4 Final Pitch Announcment
-                  .time 12.45am
-
-                .gray.event
-                  .title
-                    h4 Pitch Preparation
-                  .time 12.30am - 2pm
-                
-                .gray.event
-                  .title
-                    h4 Final Pitches
-                  .time 2pm - 3.30pm
-
-                .gray.event
-                  .title
-                    h4 Jury will choose the winner
-                  .time 3.30pm - 4pm 
-
-                .gray.event
-                  .title
-                    h4 Winner will be announced
-                  .time 4pm - 4.30pm
-
-                .accent.event
-                  .title
-                    h4 Hackathon ends
-                  .time 5.pm
-
-  a.downwards.right.accent.triangle(name="teaser2018")
-
-  section.white.block
-    .prices
-      .container
-        .accent.section.heading
-          .title
-            h2 Teaser 2018
-          .subtitle
-            h3
-              a.corrupted(href="http://eu-west-1.hackaburg.de/bWF5YmUgdGhpcyB1cmwgY29udGFpbnMgc29tZXRoaW5nLi4K.zip", target="_blank") $ ./hb_initialization64.exe data
-      
-        .grid
-          .row
-            .col-33
-              p Hackaburg 2018 has finally started!
-              p Stay up to date over our social media channels.
-              br
-              a.fluid.accent.button(href="https://www.facebook.com/hackaburg") Follow us on Facebook
-              br
-              br
-              a.fluid.accent.button(href="https://www.instagram.com/hackaburg") Follow uns on Instagram
-            .col-66
-              iframe(class="iframe", src="https://www.youtube.com/embed/VeSWKffbPpI", frameborder="0", gesture="media", allow="encrypted-media", allowfullscreen)
-
-
-  a.downwards.right.white.triangle(name="venue")
-
-  section.accent.block
-    .venue
-      .container
-        .inverted.section.heading
-          .title
-            h2 Venue
-          .subtitle
-            h3 How to get there
-
-        .grid
-          .row
-            .col-20
-              p TechBase Regensburg
-              p Franz-Mayer-Straße 1
-                br
-                | 93053 Regensburg
-              br
-              a.inverted.button(href="https://www.google.de/maps/dir//TechBase+Regensburg", target="_blank") Directions
-            .col-80
-              #map
-
-  a.upwards.right.white.triangle(name="faq")
-
-  section.white.block
-    .faq
-      .container
-        .accent.section.heading
-          .title
-            h2 FAQ
-          .subtitle
-            h3 Questions and answers
-
-        .grid
-          .row
-            .col-50
-              .question
-                .header
-                  h4 What exactly is a hackathon?
-                .content A hackathon is an event in which software developers, designers and entrepreneurs come together and work on an idea for a few days. The event will be sponsored by companies, that means we have exciting prizes and planned key notes for you! There is also a career fair waiting for you to be checked out and of course free food and drinks.
-            .col-50
-              .question
-                .header
-                  h4 Do I have to be a programmer to attend?
-                .content NO! We're looking for a diverse group of people who want to work on an idea for a few days. You're a designer? Help create the user interface. You're a business rockstar? Help create a business or customer plan. You want to try coding for the first time? We will have introduction workshops that will give you a first glance about coding.
-
-          .row
-            .col-50
-              .question
-                .header
-                  h4 How many people will the hackathon have?
-                .content We're planning with 140 attendees, 90% students and 10% professionals! Just apply here!
-            .col-50
-              .question
-                  .header
-                    h4 What about hardware?
-                  .content We’ll have a hardware lounge with plenty of boards, tools, and gadgets for you to check out!
-
-
-          .row
-            .col-50
-              .question
-                .header
-                  h4 What can I build?
-                .content Anything your heart desires! Hardware, web, mobile, gaming; you name it, we’ll support it.
-            .col-50
-              .question
-                .header
-                  h4 Headstart?
-                .content Only projects started at the hackathon will be eligible for prizes.
-
-          .row
-            .col-50
-              .question
-                .header
-                  h4 How do I find a team?
-                .content A team has to be smaller than 5 people. On the first day, we will have a short pitch event. That means, you can come with an idea and tell everyone what you're looking for or you get inspired by other people. Maximum team size is 5 but of course you also can work in projects on smaller teams, there is no minimum size.
-            .col-50
-              .question
-                .header
-                  h4 What should I bring to the event?
-                .content Your computer (laptop or desktop), any electronics want to use, chargers, toiletries and a sleeping bag or blanket and pillow if you're planning to stay over night and we hope you will! And of course, your student ID.
-
-          .row
-            .col-50
-              .question
-                .header
-                  h4 Overnight Stay?
-                .content Sure! We'll have a sleeping room available with 20 campbeds for EVERY NIGHT!
-            .col-50
-              .question
-                .header
-                  h4 Will there be travel reimbursements available?
-                .content Yes! If you're coming from outside the Oberpfalz, it's possible to apply for reimbursement to cover some of your travel expenses. Depending on where you come from, the reimbursement can be up to:</p>
-                  ul
-                    li Bavaria (outside of the Oberpfalz): 25€
-                    li Germany: 40€
-                    li Rest of Europe (SEPA area): 75€
-                .content 
-                  b Important note: 
-                  | We can only transfer money in the SEPA area! Thus, be ready to provide your travel receipts and bank address.
-
-                .content Got more questions about our travel reimbursement process? Ping us your questions to 
-                  a(class="accent text", href="mailto:applications@hackaburg.de") applications@hackaburg.de
-                  |  and we'll look into it.
-
-  a.upwards.right.white.triangle(name="hardware")
-
-  section.white.block
-    .faq
-      .container
-        .accent.section.heading
-          .title
-            h2 Hardware
-          .subtitle
-            h3 You need it? We have it!
-
-        .grid
-          .row
-            img(src="assets/images/hardware.jpg")           
-          .centered.text
-            a.accent.button(href="https://docs.google.com/spreadsheets/d/1EjpvBarvlzSfZeel_dNAipzqGFRiBV3Q9WchPpg8XJ0/edit?usp=sharing") Conrad Electronic's Hardware List
-          .centered.text
-            a.accent.marginTop1.button(href="https://docs.google.com/presentation/d/1xuf9xucnWyAuPmr-SwNnWhc9ByWBK_dOXXVU3PsH4aA/edit?usp=sharing") MLH's Hardware Lab
-
-  a.upwards.right.white.triangle(name="jury")
-
-  section.white.block
-    .faq
-      .container
-        .accent.section.heading
-          .title
-            h2 Jury
-          .subtitle
-            h3 You have it? We judge it
-
-        .grid
-          .row
-            img(src="assets/images/jury.jpg")           
-
-
-
+  a.downwards.right.accent.triangle(name="wersindwir2")
+  
+  
   a.downwards.right.white.triangle(name="team")
-
-  section.accent.block
-    .team
-      .container
-        .inverted.section.heading
-          .title
-            h2 Team
-          .subtitle
-            h3 The people behind hackaburg
-
-        .grid
-          .row
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_1.jpg")
-                .name Markus Guder 
-                .task Main Organizer Program
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_2.jpg")
-                .name Max Pöschl
-                .task Founder
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_13.jpg")
-                .name Martin Dörndorfer
-                .task Main Organizer DGO
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_14.jpg")
-                .name Tanja Braun
-                .task Media Coordinator DGO
-          .row
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_4.jpg")
-                .name Michelle Neun
-                .task Social Media Coordinator
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_6.jpg")
-                .name Konstantin Seitz
-                .task Social Media Coordinator
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_3.jpg")
-                .name Michael Neu
-                .task Technical Master Mind
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_5.jpg")
-                .name Felix Kopp
-                .task Print
-          .row
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_7.jpg")
-                .name Stefan Grebler
-                .task Print
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_11.jpg")
-                .name Alina Edelmann
-                .task Application Management
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_9.jpg")
-                .name Felix Sellmair
-                .task Application Management
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_10.jpg")
-                .name Bastian Lange
-                .task Application Management
-          .row
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_8.jpg")
-                .name Alexander Frummet
-                .task Application Management
-            .col-25
-              .person
-                .image
-                  img(src="assets/images/member/img_12.jpg")
-                .name Nadine Schuller
-                .task Application Management
                 
 
   script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN9OfnCw7Q1XPaQ_hNRg7ccNPHO43_6qU&sensor=true")

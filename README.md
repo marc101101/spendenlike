@@ -1,9 +1,9 @@
-# hackaburg website :rocket: :european_castle:
+# Spendenlike website :rocket:
 
-[![Build Status](https://travis-ci.org/hackaburg/website.svg?branch=master)](https://travis-ci.org/hackaburg/website)
-[![GitHub license](https://img.shields.io/github/license/hackaburg/website.svg)](https://github.com/hackaburg/website/LICENSE)
-[![GitHub tag](https://img.shields.io/github/tag/hackaburg/website.svg)](https://github.com/hackaburg/website)
-[![GitHub issues](https://img.shields.io/github/issues/hackaburg/website.svg)](https://github.com/hackaburg/website/issues)
+[![Build Status](https://travis-ci.org/hackaburg/website.svg?branch=master)](https://travis-ci.org/spendenlike/website)
+[![GitHub license](https://img.shields.io/github/license/hackaburg/website.svg)](https://github.com/spendenlike/website/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/hackaburg/website.svg)](https://github.com/spendenlike/website)
+[![GitHub issues](https://img.shields.io/github/issues/hackaburg/website.svg)](https://github.com/spendenlike/website/issues)
 
 > Hackaburg is a local hackathon event in Regensburg. This is the code of our website for the event in 2018. Have fun!
 
