@@ -5,7 +5,7 @@
 [![GitHub tag](https://img.shields.io/github/tag/hackaburg/website.svg)](https://github.com/spendenlike/website)
 [![GitHub issues](https://img.shields.io/github/issues/hackaburg/website.svg)](https://github.com/spendenlike/website/issues)
 
-> Hackaburg is a local hackathon event in Regensburg. This is the code of our website for the event in 2018. Have fun!
+> SpendenLike e.V. is a non-profit organisation. This is the code for our website.
 
 
 ## Install
