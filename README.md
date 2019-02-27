@@ -1,4 +1,4 @@
-# Spendenlike website :rocket:
+# Spendenlike website :heart:
 
 [![Build Status](https://travis-ci.org/hackaburg/website.svg?branch=master)](https://travis-ci.org/spendenlike/website)
 [![GitHub license](https://img.shields.io/github/license/hackaburg/website.svg)](https://github.com/spendenlike/website/LICENSE)
