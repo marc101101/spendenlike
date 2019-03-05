@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "outFile": "hackaburg.js",
+        "outFile": "spendenlike.js",
         "strict": true,
         "lib": [
             "es2015",

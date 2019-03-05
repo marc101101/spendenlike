@@ -1,9 +1,9 @@
 {
-  "name": "hackaburg-website",
-  "version": "2.2.1",
-  "repository": "git@github.com:hackaburg/website.git",
+  "name": "spendenlike-website",
+  "version": "1.0.0",
+  "repository": "git@github.com:spendenlike/website.git",
   "contributors": [
-    "michaelneu <git@michaeln.eu>"
+    "markusguder <git@marc101101>"
   ],
   "scripts": {
     "test": "gulp test",

@@ -30,7 +30,7 @@
           throw new Error("No password provided");
         }
 
-        const response = await fetch("https://hackaburg.de/apply/auth/register", {
+        const response = await fetch("https://spendenlike.de/apply/auth/register", {
           body: JSON.stringify({
             email,
             password,
