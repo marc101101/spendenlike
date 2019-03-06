@@ -2,7 +2,8 @@ extends ../layout.pug
 
 block nav
   .brand
-    img(src="assets/images/logo-white.png")
+    a(href="#") 
+      img(src="assets/images/logo-white.png")
     .text.white SpendenLike e.V.
 
   ul
@@ -21,39 +22,25 @@ block content
         .subtitle
           h3 Wir geben sozialen Projekten eine Bühne.
         
-        a.inverted.button(href="https://www.instagram.com/SpendenLike/" target="_blank") Spenden
-        a.regular.button(href="https://www.facebook.com/SpendenLike/" target="_blank") Spenden
+        a.inverted.button(href="https://www.instagram.com/SpendenLike/" target="_blank") Instagram
+        a.regular.button(href="https://www.facebook.com/SpendenLike/" target="_blank") Facebook
 
   a.upwards.right.white.triangle(name="about")
     .hand.image.container
       img(src="assets/images/header.png")
 
   section.white.block
-    .info
+    .tracks
       .container
-        .section.heading
-          .subtitle 
-            h2 Wer sind wir ?
-      .container
-        .centered.text.condensed.grid
-          .row
-            .right.aligned.text.col-33
-              .level2.partner
-                a(href="", target="_blank")
-                  img(src="assets/images/idea.png")
-                  h3 Unsere Idee
-            .col-33
-              .level2.partner
-                a(href="", target="_blank")
-                  img(src="assets/images/speak.png")
-                  h3 Influencer als Sprachrohr
-            .left.aligned.text.col-33
-              .level2.partner
-                a(href="", target="_blank")
-                  img(src="assets/images/map.png")
-                  h3 Vor Deiner Haustür
-                  
+        .inverted.section.heading
+          .title.center
+            h2 Wer sind wir?
 
+          .subtitle.center.redSub
+            h3 Die Idee von Spendenlike ...
+
+          p.tldr.center ... ist es, durch den Zusammenschluss von Influencern, Organisationsgenies und Filmemachern soziale Projekte über das Internet zu fördern, um gemeinsam Verantwortung zu übernehmen.
+                  
   a.downwards.right.white.triangle(name="influencer")
 
   section.accent.block
@@ -72,8 +59,8 @@ block content
               img.influencer(src="assets/images/julian.png")
               p.influencer Julian Franklin
 
-            .col-67.quote
-              p "Hi, ich bin Julian! sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+            .col-66.quote
+              p „ Hi, ich bin Julian. Ich komme aus München, studiere derzeit BWL und liebe es Videos für YouTube zu drehen. In meinen Videos geht es um meinen Alltag als Student, um Gesundheit und Ernährung, aber auch um soziales Engagement. Monatlich mach ich ein Challenge Video auf meinen Kanal, das zum einen meine Zuschauer unterhalten und zum anderen Geld für soziale Projekte sammeln soll. Für mich ist es schon fast eine Pflicht, mit den Videos etwas zurückzugeben. Im Dezember habe ich 24h auf der Straße gelebt, um zu erfahren, wie es ist obdachlos zu sein. Ich konnte mit dem Video meinen Zuschauern einen Einblick geben und noch dazu über 700 Euro an Spendengelder an Obdachlose in München in Form von Essen, Trinken und Kleidung geben. “
 
   a.downwards.right.white.triangle(name="sponsoren")
 
@@ -97,40 +84,56 @@ block content
                 img(src="assets/images/sponsoren/ifix-holl.png")
             .col-33.centered.child
 
+  a.upwards.right.white.triangle(name="wersindwir2")
+
   a.downwards.right.white.triangle(name="wersindwir2")
 
-  section.white.block
+  section.accent.block.end
+    .tracks
+      .container
+        .inverted.section.heading
+          .title.center
+            h2 Die Menschen
+
+          .subtitle.center
+            h3 Die Leute hinter der Idee
     .wall
-      .brick
-        img(src="assets/images/wall/img_1.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_4.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_3.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_1.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_5.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_1.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_4.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_3.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_1.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_5.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_1.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_4.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_3.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_1.jpg" width="100%")
-      .brick
-        img(src="assets/images/wall/img_5.jpg" width="100%")
-  
+      .line
+        .brick
+          img(src="assets/images/wall/img_4.jpg" width="100%")
+        .brick
+          img(src="assets/images/wall/img_2.jpg" width="100%")
+        .brick
+          img(src="assets/images/wall/img_3.jpg" width="100%")
+        .brick
+          img(src="assets/images/wall/img_1.jpg" width="100%")
+        .brick
+          img(src="assets/images/wall/img_5.jpg" width="100%")
+      .line
+        .brick
+          img(src="assets/images/wall/img_6.jpg" width="100%")
+        .brick
+          img(src="assets/images/wall/img_7.jpg" width="100%")
+        .brick
+          img(src="assets/images/wall/img_8.jpg" width="100%")
+        .brick
+          img(src="assets/images/wall/img_9.jpg" width="100%")
+        .brick
+          img(src="assets/images/wall/img_10.jpg" width="100%")
+      .line
+        .brick
+          img(src="assets/images/wall/img_11.jpg" width="100%")
+        .brick
+          img(src="assets/images/wall/img_12.jpg" width="100%")
+        .brick
+          img(src="assets/images/wall/img_13.jpg" width="100%")
+        .brick
+          img(src="assets/images/wall/img_15.jpg" width="100%")
+        .brick
+          img(src="assets/images/wall/img_16.jpg" width="100%")
+
+  a.upwards.right.white.triangle(name="wersindwir2")
+
+          
 
   script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN9OfnCw7Q1XPaQ_hNRg7ccNPHO43_6qU&sensor=true")
