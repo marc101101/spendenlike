@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: npm install
+      - run: npm build
       - uses: actions/checkout@master
       - uses: jakejarvis/s3-sync-action@master
         with:
