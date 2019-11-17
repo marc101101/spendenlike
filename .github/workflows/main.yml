@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         node: [ '10' ]
-    name: Node ${{ matrix.node }} sample
+    name: Build and Deploy
     steps:
       - uses: actions/checkout@v1
       - name: Setup node
@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: npm install
-      - run: npm build
+      - run: npm run-script build
       - uses: actions/checkout@master
       - uses: jakejarvis/s3-sync-action@master
         with:
