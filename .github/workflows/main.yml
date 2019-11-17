@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-16.04
     strategy:
       matrix:
-        node: [ '10', '8' ]
+        node: [ '10' ]
     name: Node ${{ matrix.node }} sample
     steps:
       - uses: actions/checkout@v1
@@ -19,17 +19,14 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: npm install
+      - uses: actions/checkout@master
+      - uses: jakejarvis/s3-sync-action@master
+        with:
+         args: --acl public-read --follow-symlinks --delete
+        env:
+         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_DEV }}
+         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+         AWS_REGION: 'eu-central-1'   # optional: defaults to us-east-1
+         SOURCE_DIR: 'dist'      # optional: defaults to entire repository
               
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - uses: jakejarvis/s3-sync-action@master
-      with:
-        args: --acl public-read --follow-symlinks --delete
-      env:
-        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_DEV }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: 'eu-central-1'   # optional: defaults to us-east-1
-        SOURCE_DIR: 'dist'      # optional: defaults to entire repository
