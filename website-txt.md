@@ -19,8 +19,7 @@ Juni 2018		Spendenlike ist nun offiziell im Vereinsregister eingetragen.
 
 Okt 2017		Acht Gründungsmitglieder gründen offiziell den Verein.
 
-	•		Der Wunsch und die Idee entsteht, sich sozial zu engagieren.
-
+Der Wunsch und die Idee entsteht, sich sozial zu engagieren.
 
 
 ## ZAHLEN 
@@ -41,30 +40,19 @@ Neues Ziel: 2.500 Euro
 ## Weiterer Aufbau
 
 Mehr über uns
-Mehr über uns
 
+![alt text](https://i.imgur.com/kI7vqgm.png "overview")
 
 Du willst noch mehr über uns erfahren, dann bist du hier genau richtig.
 
-
-SPENDENLIKE IN ZAHLEN
-SPENDENLIKE IN ZAHLEN
-
-Unsere Influencer
-Unsere Influencer
-
-
+### SPENDENLIKE IN ZAHLEN
+#### Unsere Influencer
 In unserem Verein trägt jeder seinen eigenen Beitrag für die sozialen Projekte bei. Einen wichtigen Beitrag haben hier die Influencer, die mit Ihrer Reichweite Menschen zum Weitersagen, Spenden oder Mitmachen bewegen können.
 
+![alt text](https://i.imgur.com/KRhw1VR.png "overview")
 
-YouTube: 90.500 / Instagram: 42.400 / Twitch: 177
-
-YouTube: 90.500 / Instagram: 42.400 / Twitch: 177
-
-VLOGS / FITNESS / TRAVEL
-Mehr anzeigen / Weniger anzeigen
-Mehr anzeigen / Weniger anzeigen
-
+### JULIEN FRANKLIN -  VLOGS / FITNESS / TRAVEL
+#### YouTube: 90.500 / Instagram: 42.400 / Twitch: 177
 
 Es gibt keinen der mehr die Idee von Spendenlike verkörpert, als Julian. Seit Gründung des Kanals macht er monatliche Challenges, bei denen er seine Zuschauer entertaint und zugleich hunderte Euros für den guten Zweck sammelt. 
 
@@ -75,18 +63,13 @@ Für das erste große Spendenlike-Projekt ist er die Person, die egal ob auf You
 DU kannst dir vorstellen deine Reichweite für soziale Projekte Positiv zu nutzen. Dann tritt doch einfach mit uns in Kontakt. info@spendenlike.de
 DU kannst dir vorstellen deine Reichweite für soziale Projekte Positiv zu nutzen. Dann tritt doch einfach mit uns in Kontakt. info@spendenlike.de
 
+![alt text](https://i.imgur.com/R7jrCkl.png "overview")
 
-Bilder von Unterstützern wie auf der alten Website
-Bilder von Unterstützern wie auf der alten Website
-Unsere Unterstützer
-Unsere Unterstützer
-Firmenlogo
-Firmenlogo
-
+### Bilder von Unterstützern wie auf der alten Website
+#### Unsere Unterstützer
+![alt text](https://i.imgur.com/15igSPg.png "overview")
 
 Als Vorlage für oben (Punkt 3):
-
-
 
 Wie oben für: „DU kannst dir vorstellen deine Reichweite für soziale Projekte Positiv zu nutzen. Dann tritt doch einfach mit uns in Kontakt. info@spendenlike.de“
 
@@ -120,7 +103,6 @@ Wir haben keinen festen Themenbereich, sondern agieren dort, wo in unseren Augen
 Mobiler Ansicht: untereinander
 Desktop-Ansicht: nebeneinander
 
+![alt text](https://i.imgur.com/xHqB2lt.png "overview")
+
 SpendenLike e.V. ist ein gemeinnütziger Verein. Wir wollen unsere Mitmenschen durch das Internet mehr auf soziale Projekte und Probleme aufmerksamen machen. Dass Ziel dabei ist es, über die Dinge nachdenken und sich möglicherweise selbst zu engagieren. Wir sprechen die Gleichartigen dort an, wo wir die meiste Zeit verbringen - in Social Media. Gleichzeitig über die Menschen, die uns am meisten begeistern –YouTuber, Instagramer oder Blogger.  
-
-
-
