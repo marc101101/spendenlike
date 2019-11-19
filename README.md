@@ -1,4 +1,7 @@
-# Spendenlike website :heart:
+# Spendenlike website 
+
+### Master is deprecated
+Please visit [dev-branch](https://github.com/marc101101/spendenlike/tree/dev)
 
 [![Build Status](https://travis-ci.org/spendenlike/website.svg?branch=master)](https://travis-ci.org/spendenlike/website)
 [![GitHub license](https://img.shields.io/github/license/spendenlike/website.svg)](https://github.com/spendenlike/website/LICENSE)
