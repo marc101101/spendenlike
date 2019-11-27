@@ -1,13 +1,30 @@
 <template>
+
   <div id="app">
-    <img src="./assets/logo.png">
+    <ul id="example-1">
+      <li v-for="item in items">
+        <a v-bind:href="item.path">{{ item.name }}</a>
+      </li>
+    </ul>
     <router-view/>
   </div>
 </template>
 
 <script>
+import router from './router'
+
 export default {
-  name: 'Dev'
+  name: 'Dev',
+   data() {
+    return {
+      items: router.options.routes
+    };
+  },
+  methods: {
+    generateSitemap: function() {
+      return Router.options.routes;
+    }
+  }
 }
 </script>
 
