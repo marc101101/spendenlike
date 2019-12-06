@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Home from '@/views/home.vue'
-import Spenden from '@/views/spenden.vue'
-import Info from '@/views/info.vue'
-import Ueber from '@/views/ueber.vue'
-import Geschichte from '@/views/geschichte.vue'
-import Impressum from '@/views/impressum.vue'
+import Home from '../components/home.vue'
+import Spenden from '../components/spenden.vue'
+import Info from '../components/info.vue'
+import Ueber from '../components/ueber.vue'
+import Geschichte from '../components/geschichte.vue'
+import Impressum from '../components/impressum.vue'
 
 Vue.use(Router)
 //home/spenden/info/about/geschichte/betterplace
