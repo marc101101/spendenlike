@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Home from '@/views/Home.vue'
-import Spenden from '@/views/Spenden.vue'
-import Info from '@/views/Info.vue'
-import Ueber from '@/views/Ueber.vue'
-import Geschichte from '@/views/Geschichte.vue'
-import Impressum from '@/views/Impressum.vue'
+import Home from '@/views/home.vue'
+import Spenden from '@/views/spenden.vue'
+import Info from '@/views/info.vue'
+import Ueber from '@/views/ueber.vue'
+import Geschichte from '@/views/geschichte.vue'
+import Impressum from '@/views/impressum.vue'
 
 Vue.use(Router)
 //home/spenden/info/about/geschichte/betterplace
@@ -16,7 +16,7 @@ export default new Router({
     {
       path: '/',
       name: 'Root',
-      component: Home
+      component: Homey
     },
     {
       path: '/home',
