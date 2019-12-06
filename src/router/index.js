@@ -16,7 +16,7 @@ export default new Router({
     {
       path: '/',
       name: 'Root',
-      component: Homey
+      component: Home
     },
     {
       path: '/home',
