@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand-lg navbar-dark bg-prime-theme">
+      <img src="./assets/logo-white.png" width="50px" height="50px">
       <a class="navbar-brand bg-prime-theme" href="#">SPENDENLIKE</a>
       <button
         class="navbar-toggler"
