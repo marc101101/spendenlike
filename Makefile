@@ -28,7 +28,7 @@ build:  ## build vue.js app => /dist
 
 .PHONY: start
 start:  ## start vue.js app
-	yarn run start
+	yarn && yarn run start
 
 .PHONY: information
 information:  ## echo some build information
