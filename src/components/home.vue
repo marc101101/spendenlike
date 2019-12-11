@@ -1,10 +1,46 @@
 <template>
   <div>
-    <div id="background"></div>
-    <div id="wrapper">
-      <h1><a href="/über">{{ about }}</a></h1>
-      <div id="donate">
-       <h1><a href="/spenden" style="color:red">{{ donate }}</a></h1>
+    <div v-if="isMobile()">
+      <div id="background"></div>
+      <div id="wrapper">
+        <h1>
+          <a href="/über">{{ about }}</a>
+        </h1>
+        <div id="donate">
+          <h1>
+            <a href="/spenden" style="color:red">{{ donate }}</a>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div v-else id="desktopBackground">
+      <div class="row">
+        <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+        <div class="col-6 col-md-4">
+          <div class="row">
+            <div class="column">
+              <img src="../assets/members/img_1.jpg">
+              <img src="../assets/members/img_2.jpg">
+              <img src="../assets/members/img_3.jpg">
+              <img src="../assets/members/img_4.jpg">
+              <img src="../assets/members/img_5.jpg">
+            </div>
+             <div class="column">
+              <img src="../assets/members/img_6.jpg">
+              <img src="../assets/members/img_7.jpg">
+              <img src="../assets/members/img_8.jpg">
+              <img src="../assets/members/img_9.jpg">
+              <img src="../assets/members/img_10.jpg">
+            </div>
+             <div class="column">
+              <img src="../assets/members/img_11.jpg">
+              <img src="../assets/members/img_12.jpg">
+              <img src="../assets/members/img_13.jpg">
+              <img src="../assets/members/img_14.jpg">
+              <img src="../assets/members/img_15.jpg">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -19,19 +55,38 @@ export default {
       about: "Wer sind wir",
       donate: "Spenden"
     };
+  },
+  methods: {
+    isMobile() {
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 a {
   color: white;
 }
 
-h1{
-  font-family: 'Bebas Neue';
+h1 {
+  font-family: "Bebas Neue";
 }
+
+/*
+####### MOBILE VIEW
+*/
+
 #background {
   width: 100vw;
   height: 90vh;
@@ -61,8 +116,49 @@ h1{
 }
 
 #donate {
-  color:red;
+  color: red;
   margin-top: 10rem;
+}
+
+/*
+####### DESKTOP VIEW
+*/
+
+#desktopBackground{
+ background: red;
+ height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 </style>
