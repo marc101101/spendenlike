@@ -33,8 +33,6 @@ export default new Router({
       path: '/betterplace',
       name: 'Betterplace',
       redirect: to => {
-        // the function receives the target route as the argument
-        // return redirect path/location here.
         window.location.href = "https://www.betterplace.org/en/projects/73873"
       }    
     },
