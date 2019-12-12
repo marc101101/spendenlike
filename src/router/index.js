@@ -7,6 +7,8 @@ import Info from '../components/info.vue'
 import Ueber from '../components/ueber.vue'
 import Geschichte from '../components/geschichte.vue'
 import Impressum from '../components/impressum.vue'
+import Betterplace from '../components/betterplace.vue'
+
 
 Vue.use(Router)
 //home/spenden/info/about/geschichte/betterplace
@@ -26,6 +28,13 @@ export default new Router({
       path: '/spenden',
       name: 'Spenden',
       component: Spenden
+    },
+    {
+      path: '/betterplace',
+      name: 'Betterplace',
+      redirect: to => {
+        window.location.href = "https://www.betterplace.org/en/projects/73873"
+      }    
     },
     {
       path: '/info',
