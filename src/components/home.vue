@@ -8,7 +8,7 @@
         </h1>
         <div id="donate">
           <h1>
-            <a href="/spenden" style="color:red">{{ donate }}</a>
+            <a href="/spenden" style="color:#c62828">{{ donate }}</a>
           </h1>
         </div>
       </div>
@@ -101,7 +101,7 @@ h1 {
   width: 200vw;
   height: 200vw;
   border-radius: 50%;
-  background: red;
+  background: #c62828;
   position: absolute;
   bottom: 50vh;
   left: 50%;
@@ -116,8 +116,8 @@ h1 {
 }
 
 #donate {
-  color: red;
-  margin-top: 10rem;
+  color: #c62828;
+  margin-top: 40vh;
 }
 
 /*
@@ -125,7 +125,7 @@ h1 {
 */
 
 #desktopBackground{
- background: red;
+ background: #c62828;
  height: 100%;
 }
 

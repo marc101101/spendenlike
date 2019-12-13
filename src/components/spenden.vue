@@ -6,15 +6,13 @@
       </div>
     </a>
     <a href="/betterplace">
-    <div class="stacked-blocks-mobile background-current-project">
-      <h1>Für unser aktuelles Projekt</h1>
-       <img src="../assets/current-project.jpg">
-    </div>
+      <h1 class="font-current-project">Für unser aktuelles<br> Projekt</h1>
+      <div class="stacked-blocks-mobile background-current-project"></div>
     </a>
     <a href="/patreon">
-    <div class="stacked-blocks-mobile red">
-      <h1 class="small-text-padding">Patreon</h1>
-    </div>
+      <div class="stacked-blocks-mobile red">
+        <h1 class="small-text-padding">Patreon</h1>
+      </div>
     </a>
   </div>
 </template>
@@ -32,35 +30,41 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.stacked-blocks-mobile{
+.stacked-blocks-mobile {
   height: calc((100vh - 66px) / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h1{
-  padding: 3rem;
-}
-
-.small-text-padding{
-  padding: 5rem;
+.small-text-padding {
   color: white;
 }
 
-img {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 30vh;
-    margin-top: -33vh;
-    opacity: 0.3;
+.font-current-project {
+  position: absolute;
+  margin-top: 10vh;
+  color: #2c3e50;
+  width: 100%;
 }
 
-.background-current-project{
+img {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30vh;
+  margin-top: -33vh;
+  opacity: 0.3;
+}
+
+.background-current-project {
   color: #212529;
   background-position: center;
+  background-image: url("../assets/current-project.jpg");
+  opacity: 0.3;
 }
 
-.red{
-  background: red;
+.red {
+  background: #c62828;
 }
-
 </style>
