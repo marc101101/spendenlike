@@ -80,7 +80,7 @@ hr {
   float: left;
   border-width: 5px;
   margin-top: 0rem !important;
-  background-color: red;
+  background-color: #c62828;
 }
 
 h2 {

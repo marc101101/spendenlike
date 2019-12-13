@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand-lg navbar-dark bg-prime-theme">
+       <a class="navbar-brand bg-prime-theme" href="/">
       <img src="./assets/logo-white.png" width="50px" height="50px">
-      <a class="navbar-brand bg-prime-theme" href="#">SPENDENLIKE</a>
+     SPENDENLIKE</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -56,12 +57,20 @@ export default {
   color: #2c3e50;
 }
 
-.navbar-light .navbar-toggler {
+.navbar-dark .navbar-toggler {
     border-color: rgba(0,0,0,0);
 }
 
+.navbar-dark .navbar-brand {
+    font-size: 1.8rem;
+}
+
+.nav-link{
+  font-size: 1.4rem;
+}
+
 .bg-prime-theme{
-  background-color: red !important;
+  background-color: #c62828 !important;
   color: white !important;
 }
 </style>

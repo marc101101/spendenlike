@@ -24,7 +24,7 @@ help:  ## help target to show available commands with information
 
 .PHONY: build
 build:  ## build vue.js app => /dist
-	yarn run build
+	yarn && yarn run build
 
 .PHONY: start
 start:  ## start vue.js app
