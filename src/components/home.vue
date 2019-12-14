@@ -19,25 +19,25 @@
         <div class="col-6 col-md-4">
           <div class="row">
             <div class="column">
-              <img src="../assets/members/img_1.jpg">
-              <img src="../assets/members/img_2.jpg">
-              <img src="../assets/members/img_3.jpg">
-              <img src="../assets/members/img_4.jpg">
-              <img src="../assets/members/img_5.jpg">
+              <img alt="member" src="../assets/members/img_1.jpg">
+              <img alt="member" src="../assets/members/img_2.jpg">
+              <img alt="member" src="../assets/members/img_3.jpg">
+              <img alt="member" src="../assets/members/img_4.jpg">
+              <img alt="member" src="../assets/members/img_5.jpg">
             </div>
              <div class="column">
-              <img src="../assets/members/img_6.jpg">
-              <img src="../assets/members/img_7.jpg">
-              <img src="../assets/members/img_8.jpg">
-              <img src="../assets/members/img_9.jpg">
-              <img src="../assets/members/img_10.jpg">
+              <img alt="member" src="../assets/members/img_6.jpg">
+              <img alt="member" src="../assets/members/img_7.jpg">
+              <img alt="member" src="../assets/members/img_8.jpg">
+              <img alt="member" src="../assets/members/img_9.jpg">
+              <img alt="member" src="../assets/members/img_10.jpg">
             </div>
              <div class="column">
-              <img src="../assets/members/img_11.jpg">
-              <img src="../assets/members/img_12.jpg">
-              <img src="../assets/members/img_13.jpg">
-              <img src="../assets/members/img_14.jpg">
-              <img src="../assets/members/img_15.jpg">
+              <img alt="member" src="../assets/members/img_11.jpg">
+              <img alt="member" src="../assets/members/img_12.jpg">
+              <img alt="member" src="../assets/members/img_13.jpg">
+              <img alt="member" src="../assets/members/img_14.jpg">
+              <img alt="member" src="../assets/members/img_15.jpg">
             </div>
           </div>
         </div>

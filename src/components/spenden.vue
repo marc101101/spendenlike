@@ -17,7 +17,7 @@
     </transition>
     <transition name="fade">
      <div class="stacked-blocks-mobile button blue" v-if="visible_1">
-       <img src="../assets/paypal.png" class="paypal">
+       <img alt="paypal" src="../assets/paypal.png" class="paypal">
        <h1 class="small-text-padding">Paypal</h1>
     </div>
     </transition>
