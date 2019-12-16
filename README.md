@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/81f23a7034c789798594/maintainability)](https://codeclimate.com/github/marc101101/spendenlike/maintainability)
+
 # spendenlike
 
 > A Vue.js project
