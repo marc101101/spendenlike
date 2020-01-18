@@ -8,6 +8,7 @@ import Ueber from '../components/ueber.vue'
 import Geschichte from '../components/geschichte.vue'
 import Impressum from '../components/impressum.vue'
 import Betterplace from '../components/betterplace.vue'
+import FAQ from '../components/faq.vue'
 
 
 Vue.use(Router)
@@ -46,10 +47,15 @@ export default new Router({
       name: 'Über Uns',
       component: Ueber
     },
-    {
+    /*{
       path: '/geschichte',
       name: 'Geschichte',
       component: Geschichte
+    },*/
+    {
+      path: '/faq',
+      name: 'FAQ',
+      component: FAQ
     },
     {
       path: '/impressum',

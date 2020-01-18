@@ -28,11 +28,11 @@
       </h1>
       <div class="stacked-blocks-mobile background-current-project"></div>
     </a>
-    <a href="https://www.patreon.com/">
+    <!--a href="https://www.patreon.com/">
       <div class="stacked-blocks-mobile red">
         <h1 class="small-text-padding">Patreon</h1>
       </div>
-    </a>
+    </a-->
   </div>
 </template>
 
@@ -51,7 +51,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .stacked-blocks-mobile {
-  height: calc((100vh - 66px) / 3);
+  height: calc((100vh - 66px) / 2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@ export default {
 
 .font-current-project {
   position: absolute;
-  margin-top: 10vh;
+  margin-top: 20vh;
   color: #2c3e50;
   width: 100%;
 }
