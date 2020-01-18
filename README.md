@@ -1,4 +1,7 @@
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/81f23a7034c789798594/maintainability)](https://codeclimate.com/github/marc101101/spendenlike/maintainability)
+
+![CI/CD Build](https://github.com/marc101101/spendenlike/workflows/Upload%20Website/badge.svg)
 
 # spendenlike
 
