@@ -19,25 +19,25 @@
         <div class="col-6 col-md-4">
           <div class="row">
             <div class="column">
-              <img alt="member" src="../assets/members/img_1.jpg">
-              <img alt="member" src="../assets/members/img_2.jpg">
-              <img alt="member" src="../assets/members/img_3.jpg">
-              <img alt="member" src="../assets/members/img_4.jpg">
-              <img alt="member" src="../assets/members/img_5.jpg">
+              <img alt="member" src="../assets/members/img_1.jpg" />
+              <img alt="member" src="../assets/members/img_2.jpg" />
+              <img alt="member" src="../assets/members/img_3.jpg" />
+              <img alt="member" src="../assets/members/img_4.jpg" />
+              <img alt="member" src="../assets/members/img_5.jpg" />
             </div>
-             <div class="column">
-              <img alt="member" src="../assets/members/img_6.jpg">
-              <img alt="member" src="../assets/members/img_7.jpg">
-              <img alt="member" src="../assets/members/img_8.jpg">
-              <img alt="member" src="../assets/members/img_9.jpg">
-              <img alt="member" src="../assets/members/img_10.jpg">
+            <div class="column">
+              <img alt="member" src="../assets/members/img_6.jpg" />
+              <img alt="member" src="../assets/members/img_7.jpg" />
+              <img alt="member" src="../assets/members/img_8.jpg" />
+              <img alt="member" src="../assets/members/img_9.jpg" />
+              <img alt="member" src="../assets/members/img_10.jpg" />
             </div>
-             <div class="column">
-              <img alt="member" src="../assets/members/img_11.jpg">
-              <img alt="member" src="../assets/members/img_12.jpg">
-              <img alt="member" src="../assets/members/img_13.jpg">
-              <img alt="member" src="../assets/members/img_14.jpg">
-              <img alt="member" src="../assets/members/img_15.jpg">
+            <div class="column">
+              <img alt="member" src="../assets/members/img_11.jpg" />
+              <img alt="member" src="../assets/members/img_12.jpg" />
+              <img alt="member" src="../assets/members/img_13.jpg" />
+              <img alt="member" src="../assets/members/img_14.jpg" />
+              <img alt="member" src="../assets/members/img_15.jpg" />
             </div>
           </div>
         </div>
@@ -47,7 +47,6 @@
 </template>
 
 <script>
-
 export default {
   name: "Home",
   data() {
@@ -74,7 +73,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 a {
   color: white;
 }
@@ -124,9 +122,9 @@ h1 {
 ####### DESKTOP VIEW
 */
 
-#desktopBackground{
- background: #c62828;
- height: 100%;
+#desktopBackground {
+  background: #c62828;
+  height: 100%;
 }
 
 .row {
@@ -160,5 +158,4 @@ h1 {
     max-width: 100%;
   }
 }
-
 </style>
