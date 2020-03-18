@@ -15,8 +15,17 @@
     </div>
     <div v-else id="desktopBackground">
       <div class="row">
-        <div class="col-12 col-md-8">.col-12 .col-md-8</div>
-        <div class="col-6 col-md-4">
+        <div class="col-12 col-lg-8" style="padding: 8rem">
+          <h1 class="desktop-font">
+            WIR GEBEN
+            <br />SOZIALEN PROJEKTEN
+            <br />EINE BÜHNE.
+          </h1>
+          <p
+            class="desktop-text"
+          >SpendenLike e.V. ist ein gemeinnütziger Verein. Wir wollen unsere Mitmenschen durch das Internet mehr auf soziale Projekte und Probleme aufmerksamen machen. Dass Ziel dabei ist es, über die Dinge nachdenken und sich möglicherweise selbst zu engagieren.</p>
+        </div>
+        <div class="col-6 col-lg-4">
           <div class="row">
             <div class="column">
               <img alt="member" src="../assets/members/img_1.jpg" />
@@ -81,6 +90,18 @@ h1 {
   font-family: "Bebas Neue";
 }
 
+.desktop-font {
+  color: white;
+  text-align: left;
+  font-size: 3.5rem;
+}
+
+.desktop-text {
+  color: white;
+  text-align: left;
+  font-family: "Helvetica";
+}
+
 /*
 ####### MOBILE VIEW
 */
@@ -124,7 +145,7 @@ h1 {
 
 #desktopBackground {
   background: #c62828;
-  height: 100%;
+  height: 93vh;
 }
 
 .row {
