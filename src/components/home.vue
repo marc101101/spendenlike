@@ -14,42 +14,18 @@
       </div>
     </div>
     <div v-else id="desktopBackground">
-      <div class="row">
-        <div class="col-12 col-lg-8" style="padding: 8rem">
-          <h1 class="desktop-font">
-            WIR GEBEN
-            <br />SOZIALEN PROJEKTEN
-            <br />EINE BÜHNE.
-          </h1>
-          <p
-            class="desktop-text"
-          >SpendenLike e.V. ist ein gemeinnütziger Verein. Wir wollen unsere Mitmenschen durch das Internet mehr auf soziale Projekte und Probleme aufmerksamen machen. Dass Ziel dabei ist es, über die Dinge nachdenken und sich möglicherweise selbst zu engagieren.</p>
-        </div>
-        <div class="col-6 col-lg-4">
-          <div class="row">
-            <div class="column">
-              <img alt="member" src="../assets/members/img_1.jpg" />
-              <img alt="member" src="../assets/members/img_2.jpg" />
-              <img alt="member" src="../assets/members/img_3.jpg" />
-              <img alt="member" src="../assets/members/img_4.jpg" />
-              <img alt="member" src="../assets/members/img_5.jpg" />
-            </div>
-            <div class="column">
-              <img alt="member" src="../assets/members/img_6.jpg" />
-              <img alt="member" src="../assets/members/img_7.jpg" />
-              <img alt="member" src="../assets/members/img_8.jpg" />
-              <img alt="member" src="../assets/members/img_9.jpg" />
-              <img alt="member" src="../assets/members/img_10.jpg" />
-            </div>
-            <div class="column">
-              <img alt="member" src="../assets/members/img_11.jpg" />
-              <img alt="member" src="../assets/members/img_12.jpg" />
-              <img alt="member" src="../assets/members/img_13.jpg" />
-              <img alt="member" src="../assets/members/img_14.jpg" />
-              <img alt="member" src="../assets/members/img_15.jpg" />
-            </div>
-          </div>
-        </div>
+      <div class="header-img-people">
+        <img height="100%" width="100%" src="../assets/home-desktop.png" />
+      </div>
+      <div class="col-lg-6" style="padding: 8rem; float:left">
+        <h1 class="desktop-font">
+          WIR GEBEN
+          <br />SOZIALEN PROJEKTEN
+          <br />EINE BÜHNE.
+        </h1>
+        <p
+          class="desktop-text"
+        >SpendenLike e.V. ist ein gemeinnütziger Verein. Wir wollen unsere Mitmenschen durch das Internet mehr auf soziale Projekte und Probleme aufmerksamen machen. Dass Ziel dabei ist es, über die Dinge nachdenken und sich möglicherweise selbst zu engagieren.</p>
       </div>
     </div>
   </div>
@@ -100,6 +76,13 @@ h1 {
   color: white;
   text-align: left;
   font-family: "Helvetica";
+  font-size: 1.3rem;
+}
+
+.header-img-people {
+  float: right;
+  margin-top: -7rem;
+  position: relative;
 }
 
 /*
