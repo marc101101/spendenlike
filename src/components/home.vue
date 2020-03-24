@@ -14,10 +14,14 @@
       </div>
     </div>
     <div v-else id="desktopBackground">
+      <div class="background-desktop"></div>
       <div class="header-img-people">
         <img height="100%" width="100%" src="../assets/home-desktop.png" />
       </div>
-      <div class="col-lg-6" style="padding: 8rem; float:left">
+      <div
+        class="col-lg-6"
+        style="float:left; background:#c62828; padding: 5rem; padding-top: 9rem"
+      >
         <h1 class="desktop-font">
           WIR GEBEN
           <br />SOZIALEN PROJEKTEN
@@ -81,8 +85,18 @@ h1 {
 
 .header-img-people {
   float: right;
-  margin-top: -7rem;
+  margin-top: -4.8rem;
   position: relative;
+  width: 100vh;
+  height: 100vh;
+}
+
+.background-desktop {
+  width: 200vh;
+  height: 100vh;
+  background: #c62828;
+  overflow: hidden;
+  position: fixed;
 }
 
 /*
@@ -128,7 +142,6 @@ h1 {
 
 #desktopBackground {
   background: #c62828;
-  height: 93vh;
 }
 
 .row {
