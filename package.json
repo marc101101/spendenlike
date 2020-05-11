@@ -18,7 +18,7 @@
     "@types/googlemaps": "^3.29.2",
     "@types/js-cookie": "^2.1.0",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.9.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-connect": "^5.0.0",
     "gulp-data": "^1.2.1",
     "gulp-less": "^3.3.2",
