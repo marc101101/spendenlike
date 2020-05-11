@@ -21,7 +21,7 @@
     "gulp-clean-css": "^3.9.0",
     "gulp-connect": "^5.0.0",
     "gulp-data": "^1.2.1",
-    "gulp-less": "^3.3.2",
+    "gulp-less": "^4.0.1",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.1",
