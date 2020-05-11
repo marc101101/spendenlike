@@ -87,7 +87,7 @@ h1 {
   float: right;
   margin-top: -4.8rem;
   position: relative;
-  width: 100vh;
+  width: 90vh;
   height: 100vh;
 }
 
