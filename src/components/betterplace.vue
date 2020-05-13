@@ -1,16 +1,14 @@
 <template>
-
+  <img style="width:100%" src="../assets/better-place.png" />
 </template>
 
 <script>
-import Router from 'vue-router';
+import Router from "vue-router";
 
 export default {
   name: "Betterplace",
   data() {
-    return {
-      
-    };
+    return {};
   }
 };
 </script>

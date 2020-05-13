@@ -16,7 +16,24 @@
       <p>Unentgeldlich helfen diese den Projekten mit Reichweite</p>
       <img class="influencer-img" src="../assets/julian.jpg" />
       <h1 class="small-text-padding" style="margin-top: 0.5rem">Julian Franklin</h1>
-      <p>vlog / Fitness / Travel</p>113.000
+
+      <p>vlog / Fitness / Travel</p>
+      <a href="https://www.youtube.com/channel/UCz0S6k_Pcy5Wp_vlraC6C3w">
+        <img style="width: 2rem;margin-bottom: 2rem;" src="../assets/youtube_red.png" />
+      </a>
+      <a href="https://www.instagram.com/the.franklin">
+        <img
+          style="width: 2rem;margin-bottom: 2rem;margin-left: 0.5rem"
+          src="../assets/instagram_red.png"
+        />
+      </a>
+      <a href="https://m.twitch.tv/thefranklinstream/profile">
+        <img
+          style="width: 2rem; margin-bottom: 2rem;margin-left: 0.5rem"
+          src="../assets/twitch_red.png"
+        />
+      </a>
+      <br />113.000
       Abonenten /
       44.000
       Follower /
@@ -48,6 +65,21 @@
     <div class="stacked-blocks-mobile red">
       <h1 class="small-text-padding">Mehr von uns:</h1>
       <br />
+      <a href="https://www.instagram.com/spendenlike/">
+        <img style="width: 2rem;margin-bottom: 2rem;" src="../assets/instagram.png" />
+      </a>
+      <a href="https://www.youtube.com/channel/UCz0S6k_Pcy5Wp_vlraC6C3w">
+        <img
+          style="width: 2rem;margin-bottom: 2rem; margin-left: 0.5rem"
+          src="../assets/youtube.png"
+        />
+      </a>
+      <a href="https://open.spotify.com/show/4V2sMOqfh0JdSYGBD8KeZ4?si=BeDVRxroQuiPHHPec4yKdg">
+        <img
+          style="width: 2rem; margin-bottom: 2rem; margin-left: 0.5rem"
+          src="../assets/spotify.png"
+        />
+      </a>
     </div>
   </div>
 </template>
