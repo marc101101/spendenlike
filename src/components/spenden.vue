@@ -29,7 +29,7 @@
     </transition>
 
     <transition name="fade">
-      <a href="https://www.paypal.me/AugustinAndreas">
+      <a href="https://paypal.me/spendenlike">
         <div class="stacked-blocks-mobile button blue" v-if="visible_1">
           <img alt="paypal" src="../assets/paypal.png" class="paypal" />
           <h1 class="small-text-padding">Paypal</h1>
