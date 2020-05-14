@@ -31,8 +31,9 @@ export default new Router({
     {
       path: "/betterplace",
       name: "Betterplace",
+      component: Betterplace,
       redirect: to => {
-        window.location.href = "https://www.betterplace.org/en/projects/73873";
+        window.open("https://www.betterplace.org/en/projects/73873", "_blank");
       }
     },
     {
@@ -40,11 +41,6 @@ export default new Router({
       name: "Über Uns",
       component: Ueber
     },
-    /*{
-      path: '/geschichte',
-      name: 'Geschichte',
-      component: Geschichte
-    },*/
     {
       path: "/faq",
       name: "FAQ",

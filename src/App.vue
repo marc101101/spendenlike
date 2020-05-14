@@ -37,13 +37,10 @@ export default {
   name: "Dev",
   data() {
     return {
-      items: router.options.routes
+      items: router.options.routes.filter(e => {
+        return e.name != "Home";
+      })
     };
-  },
-  methods: {
-    generateSitemap: function() {
-      return Router.options.routes;
-    }
   }
 };
 </script>

@@ -5,21 +5,34 @@
     </div>
     <transition name="fade">
       <div class="stacked-blocks-mobile big" v-if="visible_1">
-        <p>Lieber Spender,<br>
-        SpendenLike e.V. ist ein gemeinnütziger Verein. Wir wollen unsere Mitmenschen durch das Internet mehr auf soziale Projekte und Probleme aufmerksamen machen. <br><br>
-        Alle Spendeneinnahmen fließen zu 100% in gemeinnützige Projekte.</p>
+        <p class="regular-font">
+          Lieber Spender,
+          <br />SpendenLike e.V. ist ein gemeinnütziger Verein. Wir wollen unsere Mitmenschen durch das Internet mehr auf soziale Projekte und Probleme aufmerksamen machen.
+          <br />
+          <br />Alle Spendeneinnahmen fließen zu 100% in gemeinnützige Projekte.
+        </p>
       </div>
     </transition>
-     <transition name="fade">
-     <div class="stacked-blocks-mobile button red" v-if="visible_1">
-       <h1 class="small-text-padding">SEPA</h1>
-    </div>
+    <transition name="fade">
+      <div
+        class="stacked-blocks-mobile button red"
+        v-if="visible_1"
+        v-on:click="visible_2 = !visible_2"
+      >
+        <h1 class="small-text-padding">SEPA</h1>
+      </div>
     </transition>
     <transition name="fade">
-     <div class="stacked-blocks-mobile button blue" v-if="visible_1">
-       <img alt="paypal" src="../assets/paypal.png" class="paypal">
-       <h1 class="small-text-padding">Paypal</h1>
-    </div>
+      <div class="stacked-blocks-mobile button" v-if="visible_2">
+        <h2 class="small-text-padding" style="color: #2c3e50">IBAN: DE49 7505 1040 0031 5008 04</h2>
+      </div>
+    </transition>
+
+    <transition name="fade">
+      <div class="stacked-blocks-mobile button blue" v-if="visible_1">
+        <img alt="paypal" src="../assets/paypal.png" class="paypal" />
+        <h1 class="small-text-padding">Paypal</h1>
+      </div>
     </transition>
     <a href="/betterplace">
       <h1 class="font-current-project">
@@ -42,7 +55,8 @@ export default {
   data() {
     return {
       msg: "Spenden",
-      visible_1: false
+      visible_1: false,
+      visible_2: false
     };
   }
 };
@@ -61,26 +75,30 @@ export default {
   color: white;
 }
 
-.big{
+.big {
   height: 100%;
   text-align: left;
   padding: 1rem;
   font-size: 1.4rem;
 }
 
-.paypal{
+.regular-font {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.paypal {
   width: 2rem;
   height: 2rem;
   margin-top: -0.8rem;
   filter: invert(100%);
-    -webkit-filter: invert(100%);
-    opacity: 1;
-        opacity: 1;
-    margin-left: -1rem;
-    margin-right: 1rem;
+  -webkit-filter: invert(100%);
+  opacity: 1;
+  opacity: 1;
+  margin-left: -1rem;
+  margin-right: 1rem;
 }
 
-.button{
+.button {
   height: 54px;
   padding-top: 0.6rem;
 }
@@ -116,11 +134,11 @@ img {
   background: #009cde;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
-
 </style>
