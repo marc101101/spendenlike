@@ -29,10 +29,12 @@
     </transition>
 
     <transition name="fade">
-      <div class="stacked-blocks-mobile button blue" v-if="visible_1">
-        <img alt="paypal" src="../assets/paypal.png" class="paypal" />
-        <h1 class="small-text-padding">Paypal</h1>
-      </div>
+      <a href="https://www.paypal.me/AugustinAndreas">
+        <div class="stacked-blocks-mobile button blue" v-if="visible_1">
+          <img alt="paypal" src="../assets/paypal.png" class="paypal" />
+          <h1 class="small-text-padding">Paypal</h1>
+        </div>
+      </a>
     </transition>
     <a href="/betterplace">
       <h1 class="font-current-project">
