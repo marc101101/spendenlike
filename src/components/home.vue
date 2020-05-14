@@ -4,7 +4,7 @@
       <div id="background"></div>
       <div id="wrapper">
         <h1>
-          <a href="/info">{{ about }}</a>
+          <a href="/über">{{ about }}</a>
         </h1>
         <div id="donate">
           <h1>
