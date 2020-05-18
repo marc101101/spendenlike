@@ -4,9 +4,7 @@ import Router from "vue-router";
 import Home from "../components/home.vue";
 import Spenden from "../components/spenden.vue";
 import Ueber from "../components/ueber.vue";
-import Geschichte from "../components/geschichte.vue";
 import Impressum from "../components/impressum.vue";
-import Betterplace from "../components/betterplace.vue";
 import FAQ from "../components/faq.vue";
 
 Vue.use(Router);
@@ -27,13 +25,6 @@ export default new Router({
       path: "/spenden",
       name: "Spenden",
       component: Spenden
-    },
-    {
-      path: "/betterplace",
-      name: "Betterplace",
-      redirect: to => {
-        window.open("https://www.betterplace.org/en/projects/73873");
-      }
     },
     {
       path: "/über",

@@ -36,7 +36,7 @@
         </div>
       </a>
     </transition>
-    <a href="/betterplace">
+    <a href="https://www.betterplace.org/en/projects/73873" target="_blank">
       <h1 class="font-current-project">
         Für unser aktuelles
         <br />Projekt
