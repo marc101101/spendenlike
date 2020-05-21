@@ -98,18 +98,20 @@
       </div>
       <div class="stacked-blocks-mobile red" style="height: 14rem">
         <h1 class="small-text-padding">SpendenLike in Zahlen</h1>
-        <br />
-        <div class="grid-element">
-          <h1>4000€</h1>
-          <p class="regular-font">für soziale Projekte gesammelt</p>
-        </div>
-        <div class="grid-element">
-          <h1>> 30</h1>
-          <p class="regular-font">Mitglieder im Verein</p>
-        </div>
-        <div class="grid-element">
-          <h1>2017</h1>
-          <p class="regular-font">gegründet</p>
+
+        <div class="container">
+          <div class="grid-element">
+            <h1>4000€</h1>
+            <p class="regular-font">für soziale Projekte gesammelt</p>
+          </div>
+          <div class="grid-element">
+            <h1>> 30</h1>
+            <p class="regular-font">Mitglieder im Verein</p>
+          </div>
+          <div class="grid-element">
+            <h1>2017</h1>
+            <p class="regular-font">gegründet</p>
+          </div>
         </div>
       </div>
       <div>
@@ -119,35 +121,40 @@
       <div class="stacked-blocks-mobile red" style="height: 30rem">
         <h1 class="small-text-padding">Unser Vorstand</h1>
         <br />
-        <div class="grid-element">
-          <img style="width:65%" src="../assets/vorstand_1.png" />
-          <h1 class="small-text-padding" style="margin-top: 0.5rem">Johannes Guder</h1>
-          <p class="regular-font">Initiator, 1. Vorstand</p>
+        <div class="container">
+          <div class="grid-element">
+            <img style="width:65%" src="../assets/vorstand_1.png" />
+            <h1 class="small-text-padding" style="margin-top: 0.5rem">Johannes Guder</h1>
+            <p class="regular-font">Initiator, 1. Vorstand</p>
+          </div>
+          <div class="grid-element">
+            <img style="width:65%" src="../assets/vorstand_3.png" />
+            <h1 class="small-text-padding" style="margin-top: 0.5rem">Johannes Tauer</h1>
+            <p class="regular-font">2. Vorstand</p>
+          </div>
+          <div class="grid-element">
+            <img style="width:65%" src="../assets/vorstand_2.png" />
+            <h1 class="small-text-padding" style="margin-top: 0.5rem">Philipp Flierl</h1>
+            <p class="regular-font">Kassier</p>
+          </div>
         </div>
-        <div class="grid-element">
-          <img style="width:65%" src="../assets/vorstand_3.png" />
-          <h1 class="small-text-padding" style="margin-top: 0.5rem">Johannes Tauer</h1>
-          <p class="regular-font">2. Vorstand</p>
         </div>
-        <div class="grid-element">
-          <img style="width:65%" src="../assets/vorstand_2.png" />
-          <h1 class="small-text-padding" style="margin-top: 0.5rem">Philipp Flierl</h1>
-          <p class="regular-font">Kassier</p>
+        <div class="stacked-blocks-mobile" style="width:100%; height: 23rem">
+          <h1 class="small-text-padding">Unsere Spender</h1>
+          <h2 class="small-text-padding" style="color: #c62828">Erste Unterstützer</h2>
+          <div class="container">
+            <div class="grid-element" style="padding:2rem">
+              <img class="support" src="../assets/ifix.png" />
+            </div>
+            <div class="grid-element" style="padding:2rem">
+              <img class="support" src="../assets/urbana.png" />
+            </div>
+            <div class="grid-element" style="padding:2rem">
+              <img class="support" src="../assets/etvalu.png" />
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="stacked-blocks-mobile" style="width:100%">
-        <h1 class="small-text-padding">Unsere Spender</h1>
-        <h2 class="small-text-padding" style="color: #c62828">Erste Unterstützer</h2>
-        <div class="grid-element" style="padding:2rem">
-          <img class="support" src="../assets/ifix.png" />
-        </div>
-        <div class="grid-element" style="padding:2rem">
-          <img class="support" src="../assets/urbana.png" />
-        </div>
-        <div class="grid-element" style="padding:2rem">
-          <img class="support" src="../assets/etvalu.png" />
-        </div>
-      </div>
+      
       <div class="stacked-blocks-mobile red" style="width:100%">
         <h1 class="small-text-padding">Mehr von uns:</h1>
         <br />
@@ -223,5 +230,8 @@ export default {
 .grid-element {
   width: 23rem;
   float: left;
+}
+.container {
+  width: 100%;
 }
 </style>
