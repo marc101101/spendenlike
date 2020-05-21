@@ -13,24 +13,24 @@
           SpendenLike e.V.
           <br />Wacholderstraße 22
           <br />92421 Schwandorf
-          <br />Email: info@spendenlike.de
+          <br />Email: johannes.guder@outlook.de
         </p>
       </div>
       <div class="col-12">
         <h2>1.VORSTAND</h2>
          <p class="regular-font">
         Johannes Guder<br />
-        E-Mail: j.guder@spendenlike.de
+        E-Mail: johannes.guder@outlook.de
         </p>
 
-        <h2>2.VORSTAND</h2>
+        <!--h2>2.VORSTAND</h2>
         <p class="regular-font">Leonard Larisch<br />
         E-Mail: l.larisch@spendenlike.de
-        </p>
+        </p-->
 
-        <h2>GESCHÄFTSFÜHRER</h2>
-        <p class="regular-font">Benedikt Riedl<br />
-       E-Mail: b.riedl@spendenlike.de
+        <h2>KASSIER</h2>
+        <p class="regular-font">Philipp Flierl<br />
+       E-Mail: philipp.flierl@gmail.com
         </p>
         
         <h2>FOTOS</h2>

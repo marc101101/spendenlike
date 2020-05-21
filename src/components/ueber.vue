@@ -7,7 +7,7 @@
       <div class="stacked-blocks-mobile red">
         <h1 class="small-text-padding">SpendenLike in Zahlen</h1>
         <br />
-        <h1>4000€</h1>
+        <h1>> 4000€</h1>
         <p class="regular-font">für soziale Projekte gesammelt</p>
         <h1>> 30</h1>
         <p class="regular-font">Mitglieder im Verein</p>
@@ -101,7 +101,7 @@
 
         <div class="container">
           <div class="grid-element">
-            <h1>4000€</h1>
+            <h1>> 4000€</h1>
             <p class="regular-font">für soziale Projekte gesammelt</p>
           </div>
           <div class="grid-element">
@@ -114,9 +114,43 @@
           </div>
         </div>
       </div>
-      <div>
-        <br />
-        <br />
+      <div class="stacked-blocks-mobile" style="height:35rem">
+        <h1 class="small-text-padding">Creator</h1>
+        <p class="regular-font">Unentgeldlich helfen diese den Projekten mit Reichweite</p>
+        <div class="container">
+          <div class="grid-element" style="float: left">
+            <img class="influencer-img" style="width: 20rem; " src="../assets/julian.jpg" />
+          </div>
+          <div class="grid-element" style="float: left; text-align: left; bottom: -10rem; position: absolute; margin-left: 24rem;">
+            <h1 class="small-text-padding" style="margin-top: 0.5rem">Julian Franklin</h1>
+            <p class="regular-font">vlog / Fitness / Travel</p>
+            <a href="https://www.youtube.com/channel/UCz0S6k_Pcy5Wp_vlraC6C3w">
+              <img style="width: 2rem;margin-bottom: 2rem;" src="../assets/youtube_red.png" />
+            </a>
+            <a href="https://www.instagram.com/the.franklin">
+              <img
+                style="width: 2rem;margin-bottom: 2rem;margin-left: 0.5rem"
+                src="../assets/instagram_red.png"
+              />
+            </a>
+            <a href="https://m.twitch.tv/thefranklinstream/profile">
+              <img
+                style="width: 2rem; margin-bottom: 2rem;margin-left: 0.5rem"
+                src="../assets/twitch_red.png"
+              />
+            </a>
+            <br />
+            <p class="regular-font" style="width: 26rem">
+              113.000
+              Abonenten /
+              44.000
+              Follower
+              /
+              1.847
+              Follower
+            </p>
+          </div>
+        </div>
       </div>
       <div class="stacked-blocks-mobile red" style="height: 30rem">
         <h1 class="small-text-padding">Unser Vorstand</h1>
@@ -138,23 +172,23 @@
             <p class="regular-font">Kassier</p>
           </div>
         </div>
-        </div>
-        <div class="stacked-blocks-mobile" style="width:100%; height: 23rem">
-          <h1 class="small-text-padding">Unsere Spender</h1>
-          <h2 class="small-text-padding" style="color: #c62828">Erste Unterstützer</h2>
-          <div class="container">
-            <div class="grid-element" style="padding:2rem">
-              <img class="support" src="../assets/ifix.png" />
-            </div>
-            <div class="grid-element" style="padding:2rem">
-              <img class="support" src="../assets/urbana.png" />
-            </div>
-            <div class="grid-element" style="padding:2rem">
-              <img class="support" src="../assets/etvalu.png" />
-            </div>
+      </div>
+      <div class="stacked-blocks-mobile" style="width:100%; height: 23rem">
+        <h1 class="small-text-padding">Unsere Spender</h1>
+        <h2 class="small-text-padding" style="color: #c62828">Erste Unterstützer</h2>
+        <div class="container">
+          <div class="grid-element" style="padding:2rem">
+            <img class="support" src="../assets/ifix.png" />
+          </div>
+          <div class="grid-element" style="padding:2rem">
+            <img class="support" src="../assets/urbana.png" />
+          </div>
+          <div class="grid-element" style="padding:2rem">
+            <img class="support" src="../assets/etvalu.png" />
           </div>
         </div>
-      
+      </div>
+
       <div class="stacked-blocks-mobile red" style="width:100%">
         <h1 class="small-text-padding">Mehr von uns:</h1>
         <br />

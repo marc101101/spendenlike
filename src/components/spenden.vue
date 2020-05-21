@@ -23,8 +23,8 @@
       </div>
     </transition>
     <transition name="fade">
-      <div class="stacked-blocks-mobile button" v-if="visible_2">
-        <h2 class="small-text-padding" style="color: #2c3e50">IBAN: DE49 7505 1040 0031 5008 04</h2>
+      <div class="stacked-blocks-mobile button" style="height: 84px" v-if="visible_2">
+        <h2 class="small-text-padding" style="color: #2c3e50">IBAN: DE49 7505 1040 0031 5008 04 <br> Sparkasse Schwandorf</h2>
       </div>
     </transition>
 
@@ -133,7 +133,7 @@ img {
 }
 
 .blue {
-  background: #009cde;
+  background: #0070ba;
 }
 
 .fade-enter-active,
