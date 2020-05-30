@@ -1,37 +1,26 @@
-# Spendenlike website 
 
-### Master is deprecated
-Please visit [dev-branch](https://github.com/marc101101/spendenlike/tree/dev)
+[![Maintainability](https://api.codeclimate.com/v1/badges/81f23a7034c789798594/maintainability)](https://codeclimate.com/github/marc101101/spendenlike/maintainability)
 
-[![Build Status](https://travis-ci.org/spendenlike/website.svg?branch=master)](https://travis-ci.org/spendenlike/website)
-[![GitHub license](https://img.shields.io/github/license/spendenlike/website.svg)](https://github.com/spendenlike/website/LICENSE)
-[![GitHub tag](https://img.shields.io/github/tag/spendenlike/website.svg)](https://github.com/spendenlike/website)
-[![GitHub issues](https://img.shields.io/github/issues/spendenlike/website.svg)](https://github.com/spendenlike/website/issues)
+![CI/CD Build](https://github.com/marc101101/spendenlike/workflows/Upload%20Website/badge.svg)
 
-> SpendenLike e.V. is a non-profit organisation. This is the code for our website.
+# spendenlike
 
+> A Vue.js project
 
-## Install
-You need to have node installed on your machine.
+## Build Setup
 
-```bash
+``` bash
+# install dependencies
 npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
 ```
-or (preferred)
-```bash
-yarn
-```
 
-
-## Usage
-
-You can take a look at the [package.json scripts section](package.json) to get an overview of available shorthands:
-
-* build the website: `yarn build`
-* start a livereload dev server: `yarn start`
-* clean the built project: `yarn clean`
-
-
-## License
-
-The code in this project is released under the [MIT license](LICENSE).
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
