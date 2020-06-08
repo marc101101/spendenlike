@@ -35,6 +35,9 @@ import router from "./router";
 
 export default {
   name: "Dev",
+  mounted() {
+    this.$store.dispatch("loadCMSData");
+  },
   data() {
     return {
       items: router.options.routes.filter(e => {

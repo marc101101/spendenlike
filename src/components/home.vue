@@ -22,14 +22,8 @@
         class="col-lg-6"
         style="float:left; background:#c62828; padding: 5rem; padding-top: 9rem"
       >
-        <h1 class="desktop-font">
-          WIR GEBEN
-          <br />SOZIALEN PROJEKTEN
-          <br />EINE BÜHNE.
-        </h1>
-        <p
-          class="desktop-text"
-        >SpendenLike e.V. ist ein gemeinnütziger Verein. Wir wollen unsere Mitmenschen durch das Internet mehr auf soziale Projekte und Probleme aufmerksamen machen. Das Ziel dabei ist es, über die Dinge nachzudenken und sich möglicherweise selbst zu engagieren.</p>
+        <h1 class="desktop-font" v-if="cmsDataProp">{{ cmsDataProp.data.home_headline }}</h1>
+        <p class="desktop-text" v-if="cmsDataProp">{{ cmsDataProp.data.home_subtitle }}</p>
       </div>
     </div>
   </div>
@@ -43,6 +37,12 @@ export default {
       about: "Wer sind wir",
       donate: "Spenden"
     };
+  },
+  computed: {
+    cmsDataProp() {
+      const cmsData = this.$store.state.cmsData;
+      return cmsData;
+    }
   },
   methods: {
     isMobile() {
