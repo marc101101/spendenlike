@@ -22,7 +22,11 @@
         class="col-lg-6"
         style="float:left; background:#c62828; padding: 5rem; padding-top: 9rem"
       >
-        <h1 class="desktop-font" v-if="cmsDataProp">{{ cmsDataProp.data.home_headline }}</h1>
+        <h1 class="desktop-font" v-if="cmsDataProp">
+          WIR GEBEN
+          <br />SOZIALEN PROJEKTEN
+          <br />EINE BÜHNE.
+        </h1>
         <p class="desktop-text" v-if="cmsDataProp">{{ cmsDataProp.data.home_subtitle }}</p>
       </div>
     </div>

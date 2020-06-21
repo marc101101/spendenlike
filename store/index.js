@@ -18,7 +18,7 @@ export default new Vuex.Store({
   actions: {
     async loadCMSData({ commit }) {
       const { data } = await axios.get(
-        "https://x6ce6j7dq6.execute-api.eu-central-1.amazonaws.com/dev/info"
+        "https://1mb9tesvgc.execute-api.eu-central-1.amazonaws.com/dev/info"
       );
       await commit("cmsData", data);
     }

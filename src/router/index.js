@@ -6,6 +6,7 @@ import Spenden from "../components/spenden.vue";
 import Ueber from "../components/ueber.vue";
 import Impressum from "../components/impressum.vue";
 import FAQ from "../components/faq.vue";
+import Ebay from "../components/ebay.vue";
 
 Vue.use(Router);
 //home/spenden/info/about/geschichte/betterplace
@@ -30,6 +31,11 @@ export default new Router({
       path: "/über",
       name: "Über Uns",
       component: Ueber
+    },
+    {
+      path: "/ebay",
+      name: "Ebay",
+      component: Ebay
     },
     {
       path: "/faq",
