@@ -9,7 +9,7 @@
         <br />
         <h1>> 4000€</h1>
         <p class="regular-font">für soziale Projekte gesammelt</p>
-        <h1>> 30</h1>
+        <h1>> 35</h1>
         <p class="regular-font">Mitglieder im Verein</p>
         <h1>2017</h1>
         <p class="regular-font">gegründet</p>
@@ -105,7 +105,7 @@
           <p class="regular-font">für soziale Projekte gesammelt</p>
         </div>
         <div class="grid-element">
-          <h1>> 30</h1>
+          <h1>> 35</h1>
           <p class="regular-font">Mitglieder im Verein</p>
         </div>
         <div class="grid-element">
