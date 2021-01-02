@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Home from '../views/Home.vue';
-import Spenden from '../views/Spenden.vue';
-import Ueber from '../views/Ueber.vue';
-import Impressum from '../views/Impressum.vue';
-import FAQ from '../views/Faq.vue';
+import Home from '../layouts/Home.vue';
+import Spenden from '../layouts/Spenden.vue';
+import Ueber from '../layouts/Ueber.vue';
+import Impressum from '../layouts/Impressum.vue';
+import FAQ from '../layouts/Faq.vue';
 
 Vue.use(VueRouter);
 
