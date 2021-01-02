@@ -19,7 +19,7 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li v-for="item in items" class="nav-item active">
+          <li v-for="item in items" class="nav-item active" v-bind:key="item.id">
             <a class="nav-link bg-prime-theme" v-bind:href="item.path">{{ item.name }}</a>
           </li>
         </ul>
@@ -53,7 +53,7 @@ export default {
   font-weight: 400;
   font-display: swap;
   src: local("Bebas Neue Regular"), local("BebasNeue-Regular"),
-    url(../static/fonts/JTUSjIg69CK48gW7PXoo9WdhyyTh89ZNpQ.woff2)
+    url(./assets/fonts/JTUSjIg69CK48gW7PXoo9WdhyyTh89ZNpQ.woff2)
       format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
@@ -65,7 +65,7 @@ export default {
   font-weight: 400;
   font-display: swap;
   src: local("Bebas Neue Regular"), local("BebasNeue-Regular"),
-    url(../static/fonts/JTUSjIg69CK48gW7PXoo9WlhyyTh89Y.woff2) format("woff2");
+    url(./assets/fonts/JTUSjIg69CK48gW7PXoo9WlhyyTh89Y.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;

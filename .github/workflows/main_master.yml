@@ -1,17 +1,16 @@
-name: Upload Website
+name: Upload Website - Prod
 
 on:
   push:
     branches:
     - master
 
-
 jobs:
   build:
     runs-on: ubuntu-16.04 
     strategy:
       matrix:
-        node: [ '6' ]
+        node: [ '14' ]
     name: Build and Deploy
     steps:
       - uses: actions/checkout@v1
@@ -30,4 +29,6 @@ jobs:
          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
          AWS_REGION: 'eu-central-1'   # optional: defaults to us-east-1
          SOURCE_DIR: 'dist'      # optional: defaults to entire repository
+
+
               
