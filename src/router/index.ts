@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Spenden from '../views/Spenden.vue';
-import Ueber from '../views/Ueber.vue';
-import Impressum from '../views/Impressum.vue';
-import FAQ from '../views/Faq.vue';
+import Spenden from '../views/Spenden.vue'
+import Ueber from '../views/Ueber.vue'
+import Impressum from '../views/Impressum.vue'
+import FAQ from '../views/Faq.vue'
 
 Vue.use(VueRouter)
 
