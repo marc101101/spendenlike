@@ -47,6 +47,7 @@ export default {
   methods: {
     collapseMenue() {
       this.isActive = !this.isActive;
+      console.log("I am here");
     }
   },
   mounted(){
