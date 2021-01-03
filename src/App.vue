@@ -13,11 +13,12 @@
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        @click="collapseMenue()"
       >
         <span class="navbar-toggler-icon text-white"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-collapse" id="navbarSupportedContent" v-bind:class="{collapse: isActive}">
         <ul class="navbar-nav mr-auto">
           <li v-for="item in items" class="nav-item active" v-bind:key="item.id">
             <a class="nav-link bg-prime-theme" v-bind:href="item.path">{{ item.name }}</a>
@@ -37,10 +38,19 @@ export default {
   name: "Dev",
   data() {
     return {
+      isActive: false,
       items: router.options.routes.filter(e => {
         return e.name != "Home";
       })
     };
+  },
+  methods: {
+    collapseMenue() {
+      this.isActive = !this.isActive;
+    }
+  },
+  mounted(){
+    this.collapseMenue();
   }
 };
 </script>
