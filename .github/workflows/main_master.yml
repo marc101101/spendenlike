@@ -32,3 +32,9 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "eu-central-1" # optional: defaults to us-east-1
           SOURCE_DIR: "dist" # optional: defaults to entire repository
+      - name: publish to github packages
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          auth-token: ${{ secrets.GITHUB_TOKEN }}
+          registry-url: PACKAGE-REGISTRY.pkg.github.com
+          cmd: publish 
