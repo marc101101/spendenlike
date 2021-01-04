@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install
+      - run: npm ci
       - run: npm run-script build        
       - name: Deploys sources to s3 bucket
         uses: jakejarvis/s3-sync-action@master
@@ -48,7 +48,7 @@ jobs:
         with:
           node-version: 14.x
 
-      - run: npm install
+      - run: npm ci
       - run: npm run-script build
       - run: npm version prerelease --preid=ci-$GITHUB_RUN_ID --no-git-tag-version
       - run: npm pack
@@ -56,7 +56,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
             name: package
-            path: "react-foldable/*.tgz"
+            path: "spendenlike/*.tgz"
 
   publish:
     name: "Publish to GitHub Packages"
@@ -72,7 +72,7 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
         registry-url: https://npm.pkg.github.com/
-        scope: "@aaronpowell"
+        scope: "@marc101101"
     - run: echo "registry=https://npm.pkg.github.com/@marc101101" >> .npmrc
     - run: npm publish $(ls *.tgz)
       env:
