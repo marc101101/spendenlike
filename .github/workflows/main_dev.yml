@@ -1,27 +1,38 @@
-name: DEV - Upload Website
+name: Upload Website - Dev
 
 on:
   push:
-    branches:
-      - dev
+    branches: [ dev ]
 
 jobs:
   build:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-18.04
     strategy:
       matrix:
-        node: ["14"]
-    name: Build and Deploy
+        os: [ubuntu-18.04]
+        node-version: [10.x, 12.x, 14.x]
+    name: build & test
     steps:
       - uses: actions/checkout@v2
-      - name: Installs yarn
-        uses: borales/actions-yarn@v2.0.0
+      - name: Installs dependencies
+        uses: actions/setup-node@v1
         with:
-          cmd: install 
-      - name: Builds sources
-        uses: borales/actions-yarn@v2.0.0
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run-script build        
+     
+  deploy:
+    needs: [build]
+    runs-on: ubuntu-18.04
+    name: deploy to s3
+    steps:
+      - uses: actions/checkout@v2
+      - name: Installs dependencies
+        uses: actions/setup-node@v1
         with:
-          cmd: build 
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run-script build        
       - name: Deploys sources to s3 bucket
         uses: jakejarvis/s3-sync-action@master
         with:
