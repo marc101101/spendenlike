@@ -22,8 +22,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
-      - run: npm run build        
+      - run: npm install
+      - run: npm run-script build        
       - name: Deploys sources to s3 bucket
         uses: jakejarvis/s3-sync-action@master
         with:
@@ -54,8 +54,8 @@ jobs:
         with:
           node-version: 14.x
 
-      - run: npm ci
-      - run: npm run build
+      - run: npm install
+      - run: npm run-script build
       - run: npm version prerelease --preid=ci-$GITHUB_RUN_ID --no-git-tag-version
       - run: npm pack
       - name: Upload
