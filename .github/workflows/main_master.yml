@@ -7,9 +7,6 @@ on:
 
 jobs:
   build:
-    defaults:
-      run:
-        working-directory: spendenlike
     runs-on: ubuntu-18.04
     strategy:
       matrix:
@@ -42,9 +39,6 @@ jobs:
       #    cmd: publish 
 
   package:
-    defaults:
-      run:
-        working-directory: spendenlike
     needs: [build]
     runs-on: ubuntu-18.04
     steps:
