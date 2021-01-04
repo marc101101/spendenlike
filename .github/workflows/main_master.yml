@@ -2,8 +2,9 @@ name: Upload Website - Prod
 
 on:
   push:
-    branches:
-    - master
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
@@ -37,7 +38,7 @@ jobs:
       #    auth-token: ${{ secrets.GITHUB_TOKEN }}
       #    registry-url: npm.pkg.github.com
       #    cmd: publish 
-
+  
   package:
     needs: [build]
     runs-on: ubuntu-18.04
@@ -55,8 +56,8 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
-            name: package
-            path: "spendenlike/*.tgz"
+            name: package-spendenlike
+            path: "*.tgz"
 
   publish:
     name: "Publish to GitHub Packages"
@@ -67,7 +68,7 @@ jobs:
     - name: Upload
       uses: actions/download-artifact@v2
       with:
-          name: package
+          name: package-spendenlike
     - uses: actions/setup-node@v1
       with:
         node-version: ${{ env.NODE_VERSION }}
