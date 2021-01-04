@@ -10,8 +10,8 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-18.04]
-        node-version: [14.x]
-    name: Build and Deploy
+        node-version: [10.x, 12.x, 14.x]
+    name: build & test
     steps:
       - uses: actions/checkout@v2
       - name: Installs dependencies
@@ -24,6 +24,7 @@ jobs:
   deploy:
     needs: [build]
     runs-on: ubuntu-18.04
+    name: deploy to s3
     steps:
       - uses: actions/checkout@v2
       - name: Installs dependencies
@@ -46,6 +47,7 @@ jobs:
   release:
     needs: [build]
     runs-on: ubuntu-18.04
+    name: release
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -72,6 +74,7 @@ jobs:
   package:
     needs: [build]
     runs-on: ubuntu-18.04
+    name: package
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
