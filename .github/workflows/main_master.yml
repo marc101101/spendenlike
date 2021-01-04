@@ -3,8 +3,6 @@ name: Upload Website - Prod
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   build:
@@ -14,6 +12,18 @@ jobs:
         os: [ubuntu-18.04]
         node-version: [14.x]
     name: Build and Deploy
+    steps:
+      - uses: actions/checkout@v2
+      - name: Installs dependencies
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run-script build        
+     
+  deploy:
+    needs: [build]
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
       - name: Installs dependencies
@@ -32,13 +42,33 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "eu-central-1" # optional: defaults to us-east-1
           SOURCE_DIR: "dist" # optional: defaults to entire repository
-      #- name: publish to github packages
-      #  uses: borales/actions-yarn@v2.0.0
-      #  with:
-      #    auth-token: ${{ secrets.GITHUB_TOKEN }}
-      #    registry-url: npm.pkg.github.com
-      #    cmd: publish 
   
+  release:
+    needs: [build]
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Changelog
+        uses: scottbrenner/generate-changelog-action@master
+        id: Changelog
+        env:
+          REPO: ${{ github.repository }}
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            ${{ steps.Changelog.outputs.changelog }}
+          draft: false
+          prerelease: false
+
   package:
     needs: [build]
     runs-on: ubuntu-18.04
@@ -48,7 +78,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
-
       - run: npm ci
       - run: npm run-script build
       - run: npm version prerelease --preid=ci-$GITHUB_RUN_ID --no-git-tag-version
