@@ -2,7 +2,7 @@ name: Upload Website - Prod
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
