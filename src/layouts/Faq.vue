@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row" style="padding: 1rem">
+    <div class="row" style="padding: 1rem;">
       <div class="col-12">
         <h1>{{ msg }}</h1>
       </div>
@@ -91,7 +91,7 @@ h2 {
 }
 .col-12 {
   margin-top: 2rem !important;
-  word-break: break-all;
+  word-break: break-word !important;
 }
 
 .container {

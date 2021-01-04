@@ -109,9 +109,9 @@ h2 {
   margin-top: 0.5rem;
 }
 
-.col-12{
+.col-12 {
   margin-top: 2rem !important;
-  word-break: break-all;
+  word-break: break-word !important;
 }
 
 .container {
