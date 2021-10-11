@@ -7,7 +7,9 @@
       <div class="stacked-blocks-mobile big" v-if="visible_1">
         <p class="regular-font">
           Lieber Spender,
-          <br />SpendenLike e.V. ist ein gemeinnütziger Verein. Wir wollen unsere Mitmenschen durch das Internet mehr auf soziale Projekte und Probleme aufmerksamen machen.
+          <br />SpendenLike e.V. ist ein gemeinnütziger Verein. Wir wollen
+          unsere Mitmenschen durch das Internet mehr auf soziale Projekte und
+          Probleme aufmerksamen machen.
           <br />
           <br />Alle Spendeneinnahmen fließen zu 100% in gemeinnützige Projekte.
         </p>
@@ -23,8 +25,15 @@
       </div>
     </transition>
     <transition name="fade">
-      <div class="stacked-blocks-mobile button" style="height: 84px" v-if="visible_2">
-        <h2 class="small-text-padding" style="color: #2c3e50">IBAN: DE49 7505 1040 0031 5008 04 <br> Sparkasse Schwandorf</h2>
+      <div
+        class="stacked-blocks-mobile button"
+        style="height: 84px"
+        v-if="visible_2"
+      >
+        <h2 class="small-text-padding" style="color: #2c3e50">
+          IBAN: DE49 7505 1040 0031 5008 04 <br />
+          Sparkasse Schwandorf
+        </h2>
       </div>
     </transition>
 
@@ -36,7 +45,10 @@
         </div>
       </a>
     </transition>
-    <a href="https://www.betterplace.org/en/projects/73873" target="_blank">
+    <a
+      href="https://www.betterplace.org/en/projects/89654-120-fahrraeder-fuer-schulkinder-inkl-mechanikerausbildung-ersatzteile-usw"
+      target="_blank"
+    >
       <h1 class="font-current-project">
         Für unser aktuelles
         <br />Projekt
