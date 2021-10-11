@@ -3,7 +3,7 @@
 
 ![CI/CD Build](https://github.com/marc101101/spendenlike/workflows/Upload%20Website/badge.svg)
 
-# spendenlike
+# spendenlike NEU
 
 > A Vue.js project
 

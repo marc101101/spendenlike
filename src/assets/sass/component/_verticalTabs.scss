@@ -1,0 +1,63 @@
+.slideUp {
+	animation: fadein 1.5s both;
+	backface-visibility: hidden;
+}
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+  }
+
+/* Vertical tab */
+.xs-nav-pills {
+	background-color: $color-white;
+	box-shadow: $secondary-shadow;
+	padding: 30px 0;
+	li {
+		margin-bottom: 10px;
+		a {
+			line-height: 1;
+			padding: 13px 40px;
+			font-size: em(16px);
+			color: $color-secondary;
+			text-transform: capitalize;
+			@include transition;
+			border-left: 4px solid transparent;
+			&:hover,
+			&.active {
+				background-color: #f5fffc;
+				border-color: $colorShamrock;
+				color: $colorShamrock;
+			}
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.xs-tab-content {
+	background-color: $color-white;
+	box-shadow: $secondary-shadow;
+	padding: 30px;
+	margin-bottom: 30px;
+	border-bottom: 2px solid transparent;
+	@include transition;
+	&:hover {
+		border-color: $colorShamrock;
+	}
+	h5 {
+		font-size: em(16px);
+		font-weight: 600;
+		color: $color-secondary;
+		line-height: 1.625;
+		margin-bottom: 10px;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}

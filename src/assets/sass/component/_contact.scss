@@ -1,0 +1,159 @@
+.xs-contact-form-wraper {
+	.xs-heading {
+		p {
+			margin-bottom: 30px;
+		}
+		.xs-separetor {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.xs-contact-form {
+	$input_form_border: 2px solid #EEEEEE;
+	input:not([type="submit"]) ,
+	textarea {
+		background-color: $color-white;
+		border: $input_form_border;
+		height: 60px;
+		border-radius: 0%;
+		padding-left: 29px;
+		border-right: 0;
+		&:focus {
+			border-color: #EEEEEE;
+		}
+	}
+	textarea {
+		resize: none;
+		height: 130px;
+		padding-top: 23px;
+	}
+	.input-group-text {
+		background-color: transparent;
+		border: $input_form_border;
+		border-radius: 0;
+		border-left: 0;
+		padding-right: 30px;
+		font-size: em(14px);
+		color: #777777;
+	}
+	.input-group {
+		margin-bottom: 20px;
+	}
+	.massage-group {
+		.input-group-text {
+			align-items: flex-start;
+			padding-top: 27px;
+		}
+	}
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: #777777;
+		font-size: em(14px);
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+		color: #777777;
+		font-size: em(14px);
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+		color: #777777;
+		font-size: em(14px);
+	}
+	:-moz-placeholder { /* Firefox 18- */
+		color: #777777;
+		font-size: em(14px);
+	}
+	.input-group {
+		&.invaild {
+			input:not([type="submit"]) ,
+			.input-group-text,
+			textarea {
+				border-color: #F44336;
+			}
+			.input-group-text {
+				color: #F44336;
+			}
+		}
+	}
+	.xpeedStudio_success_message {
+		margin-bottom: 0;
+		font-weight: 700;
+		text-align: center;
+		margin-top: 10px;
+	}
+}
+
+.xs-maps-wraper {
+	padding-top: 60px;
+}
+
+#xs-map {
+	height: 460px;
+}
+
+.xs-contact-form {
+	.input-group-append {
+		margin-left: 0px;
+	}
+}
+
+/* Contact verison 2 */
+.xs-contact-section-v2 {
+	padding-bottom: 100px;
+	margin-top: -141px;
+	position: relative;
+	z-index: 1;
+}
+.xs-contact-container {
+	background-color: $color-secondary;
+	padding: 55px;
+	margin-bottom: 60px;
+}
+.xs-contact-form-wraper {
+	h4 {
+		color: $color-white;
+		font-size: em(32px);
+		font-weight: 700;
+		margin-bottom: 37px;
+	}
+}
+.xs-contact-form {
+	&.contact-form-v2 {
+		input:not([type="submit"]),
+		textarea {
+			background-color: transparent;
+			color: $color-white;
+		}
+		.input-group-text ,
+		input:not([type="submit"]) ,
+		textarea {
+			border-color: rgba(200, 200, 200, 0.3);
+		}
+		.input-group-text {
+			color: $colorShamrock;
+		}
+		::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			color: #586ea2;
+		}
+		::-moz-placeholder { /* Firefox 19+ */
+			color: #586ea2;
+		}
+		:-ms-input-placeholder { /* IE 10+ */
+			color: #586ea2;
+		}
+		:-moz-placeholder { /* Firefox 18- */
+			color: #586ea2;
+		}
+	}
+}
+
+/* map wraper version 2 */
+.xs-maps-wraper  {
+	&.map-wraper-v2 {
+		padding-top: 0;
+		height: 100%;
+		#xs-map {
+			height: 100%;
+		}
+	}
+}

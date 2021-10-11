@@ -1,0 +1,24 @@
+.xs-archive-content {
+	padding-left: 30px;
+	padding-right: 30px;
+	.xs-heading {
+		margin-bottom: 15px;
+	}
+	p {
+		margin-bottom: 40px;
+	}
+	h5 {
+		font-weight: 500;
+		font-size: em(18px);
+		color: $color-secondary;
+		margin-bottom: 20px;
+	}
+	.xs-unorder-list {
+		margin-bottom: 40px;
+	}
+}
+.xs-archive-image {
+	@extend .xs-padding-0;
+	position: relative;
+	z-index: 2;
+}

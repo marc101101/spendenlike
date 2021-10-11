@@ -1,0 +1,41 @@
+.xs-portfolio-grid-item {
+	padding: 15px;
+	max-width: 100%;
+}
+.xs-single-portfolio-item {
+	display: block;
+	position: relative;
+	box-shadow: $primary-shadow;
+	@include transition;
+	&::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba($colorWatermelon, .8);
+		@include transition;
+		opacity: 0;
+	}
+	.xs-portfolio-content {
+		position: absolute;
+		top: calc(50% + 40px);
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: $color-white;
+		font-size: em(50px);
+		opacity: 0;
+		@include transition;
+	}
+	&:hover {
+		box-shadow: $secondary-shadow;
+		&::before {
+			opacity: 1;
+		}
+		.xs-portfolio-content {
+			opacity: 1;
+			top: 50%;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+/* Single service media */
+.xs-content-section-padding {
+	&.xs-service-promo-section {
+		padding-bottom: 60px;
+	}
+}
+
+.xs-single-media {
+	margin-bottom: 40px;
+	span {
+		font-size: em(50px);
+		margin-right: 30px;
+	}
+	h5 {
+		color: $color-secondary;
+		font-size: em(22px);
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+	p {
+		margin-bottom: 8px;
+	}
+	a {
+		color: $color-secondary;
+		font-weight: 700;
+		i {
+			color: $dodgerBlue;
+			padding-right: 5px;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.xs-call-to-action-section {
+	position: relative;
+	padding-top: 198px;
+	padding-bottom: 198px;
+	.xs-black-overlay {
+		background-color: rgba($color-black, .5);
+	}
+}
+
+/* Call to action */ 
+.xs-call-to-action {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	color: $color-white;
+	h3 {
+		font-size: em(42px);
+		font-weight: 700;
+		line-height: 1.2;
+		margin-bottom: 50px;
+	}
+	.xs-btn-wraper {
+		a {
+			letter-spacing: .3px;
+		}
+	}
+}

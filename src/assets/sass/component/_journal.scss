@@ -1,0 +1,122 @@
+.xs-single-journal {
+	background-color: $color-white;
+	@include transition;
+	.xs-separetor {
+		margin-top: 0;
+		margin-bottom: 0;
+		background-color: #f3f3f3;
+	}
+	.entry-thumbnail {
+		position: relative;
+		.author-name {
+			a {
+				font-size: em(12px);
+				color: $color-white;
+				font-weight: 500;
+			}
+		}
+	}
+	.post-author {
+		position: absolute;
+		bottom: -8px;
+		left: 0;
+		width: 100%;
+		padding: 0 24px;
+		display: inline-flex;
+		align-items: center;
+	}
+	.xs-round-avatar {
+		position: relative;
+		@include equal-size(45px);
+		overflow: visible;
+		z-index: 1;
+		margin-right: 30px;
+		img {
+			border-radius: 100%;
+			margin-top: 7px;
+			margin-left: 1px;
+		}
+		&:before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 50%;
+			height: calc(100% + 20px);
+			width: calc(100% + 50px);
+			background-image: url("../images/avatar-background.png");
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			z-index: -1;
+			transform: translateX(-50%);
+		}
+	}
+	.entry-header {
+		padding: 40px 30px 30px 30px;
+	}
+	&:hover {
+		&.xs-box-shadow {
+			box-shadow: $secondary-shadow;
+		}
+	}
+	.entry-header {
+		span {
+			a {
+				color: $color-primary;
+				font-size: em(16px);
+				display: inline-block;
+				line-height: 1;
+			}
+		}
+		.entry-meta {
+			margin-bottom: 15px;
+		}
+	}
+
+	.entry-title {
+		font-size: em(18px);
+		font-weight: 600;
+		line-height: 1.5;
+		margin-bottom: 0;
+		a {
+			color: $color-secondary;
+		}
+	}
+
+	.post-meta {
+		padding: 20px 30px;
+		span {
+			margin-right: 30px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		span {
+			color: #999999;
+			font-weight: 500;
+			display: inline-block;
+			line-height: 1;
+			a {
+				color: #999999;
+				line-height: 1;
+			}
+			i {
+				padding-right: 5px;
+			}
+		}
+		&.meta-style-color {
+			.comments-link {
+				color: $colorWatermelon;
+				a {
+					color: $colorWatermelon;
+				}
+			}
+			.view-link {
+				color: $light-purple;
+				a {
+					color: $light-purple;
+				}
+			}
+		}
+	}
+}

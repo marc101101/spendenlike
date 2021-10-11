@@ -1,0 +1,259 @@
+.xs-bg-property {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.content-center {
+	text-align: center;
+	margin: 0 auto;
+}
+.content-left {
+	text-align: left;
+	margin: 0 auto 0 0;
+}
+.content-right {
+	text-align: right;
+	margin: 0 0 0 auto;
+}
+
+.transition {
+	transition: all .4s ease;
+}
+
+
+.xs-section-padding {
+	padding: 120px 0;
+}
+.xs-content-section-padding {
+	padding: 100px 0px;
+}
+.xs-content-padding {
+	padding: 30px 30px;
+}
+.xs-section-padding-bottom {
+	padding-bottom: 120px;
+}
+
+
+.xs-box-shadow {
+	box-shadow: $primary-shadow;
+}
+
+.xs-box-shadow-2 {
+	box-shadow: $secondary-shadow;
+}
+
+//margins
+.xs-margin-0 {
+	margin: 0;
+}
+.xs-mb-0 {
+	margin-bottom: 0;
+}
+.xs-mb-10 {
+	margin-bottom: 10px;
+}
+.xs-mb-20 {
+	margin-bottom: 20px;
+}
+.xs-mb-30 {
+	margin-bottom: 30px;
+}
+.xs-mb-40 {
+	margin-bottom: 40px;
+}
+.xs-mb-50 {
+	margin-bottom: 50px;
+}
+.xs-mb-60 {
+	margin-bottom: 60px;
+}
+.xs-mb-70 {
+	margin-bottom: 70px;
+}
+.xs-mb-80 {
+	margin-bottom: 80px;
+}
+.xs-mb-90 {
+	margin-bottom: 90px;
+}
+.xs-mb-100 {
+	margin-bottom: 100px;
+}
+// xs padding 
+.xs-padding-0 {
+	padding: 0;
+}
+
+// font alt
+.xs-font-alt {
+	font-family: $fontAlt;
+}
+.d-flex-center-end {
+	@include flex-position(inline-flex, flex-end, center);
+}
+
+// color list
+.color-navy-blue {
+	color: $color-secondary;
+}
+.color-aqua {
+	color: $color-primary;
+}
+.color-white {
+	color: $color-white;
+}
+.color-green {
+	color: $color-green;
+}
+.color-light-red {
+	color: $colorWatermelon;
+}
+.color-purple {
+	color: $light-purple;
+}
+.color-light-green {
+	color: $colorShamrock;
+}
+.color-orange {
+	color: $colorOrange;
+}
+.color-blue {
+	color: $dodgerBlue;
+}
+.color-burntOrange {
+	color: #fe813a;
+}
+.color-riptide {
+	color: #8ed4cc;
+}
+.color-bondiBlue {
+	color: $color-bondiBlue;
+}
+.color-yellow {
+	color: #ffca0a;
+}
+// bg color list
+.bg-gray {
+	background-color: $color-gray;
+}
+.bg-gray-2 {
+	background-color: #f8f8f8;
+}
+.bg-navy-blue {
+	background-color: $color-secondary;
+}
+.bg-aqua {
+	background-color: $color-primary;
+}
+.bg-navy-blue {
+	background-color: $color-secondary;
+}
+.bg-white {
+	background-color: $color-white;
+}
+.bg-green {
+	background-color: $color-green;
+}
+.bg-light-red {
+	background-color: $colorWatermelon;
+}
+.bg-purple {
+	background-color: $light-purple;
+}
+.bg-light-green {
+	background-color: $colorShamrock;
+}
+.bg-orange {
+	background-color: $colorOrange;
+}
+.bg-blue {
+	background-color: $dodgerBlue;
+}
+.bg-riptide {
+	background-color: #8ed4cc;
+}
+.bg-yellow {
+	background-color: #ffca0a;
+}
+.bg-burntOrange {
+	background-color: #fe813a;
+}
+.bg-bondiBlue {
+	background-color: $color-bondiBlue;
+}
+
+// overlay list
+.xs-black-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba($color-black, .4);
+	z-index: 0;
+	&.bg-aqua {
+		background-color: rgba($color-primary, .8);
+	}
+	&.bg-navy-blue {
+		background-color: rgba($color-secondary, .9);
+	}
+	&.bg-red {
+		background-color: rgba($colorWatermelon, .8);
+	}
+	&.bg-green {
+		background-color: rgba($colorShamrock, .8);	
+	}
+}
+
+h1, h2, h3 {
+	line-height: 1.4;
+}
+
+// padding right list
+.xs-pr-10 {
+	padding-right: 10px;
+}
+.xs-pr-20 {
+	padding-right: 20px;
+}
+.xs-pr-30 {
+	padding-right: 30px;
+}
+.xs-pr-40 {
+	padding-right: 40px;
+}
+.xs-pr-50 {
+	padding-right: 50px;
+}
+.xs-pr-60 {
+	padding-right: 60px;
+}
+.xs-pr-70 {
+	padding-right: 70px;
+}
+.xs-pr-80 {
+	padding-right: 80px;
+}
+.xs-pr-90 {
+	padding-right: 90px;
+}
+.xs-pr-100 {
+	padding-right: 100px;
+}
+
+// xs border
+.xs-border {
+	border: 1px solid #F1F1F1;
+}
+// padding 40
+.xs-padding-40 {
+	padding: 40px;
+}
+
+.parallax-window {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}

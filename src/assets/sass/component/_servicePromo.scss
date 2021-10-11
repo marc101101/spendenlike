@@ -1,0 +1,79 @@
+.xs-service-promo {
+	position: relative;
+	z-index: 4;
+	span {
+		color: $color-primary;
+		display: inline-block;
+		margin-bottom: 30px;
+		font-size: em(60px);
+	}
+	.color-orange {
+		color: $colorOrange;
+	}
+	.color-red {
+		color: $colorWatermelon;
+	}
+	.color-purple {
+		color: $light-purple;
+	}
+	.color-green {
+		color: $colorShamrock;
+	}
+	h5 {
+		font-size: em(18px);
+		font-weight: 700;
+		color: $color-secondary;
+		line-height: 1.4;
+		margin-bottom: 20px;
+	}
+	p {
+		margin-bottom: 0;
+	}
+	&.box-color {
+		padding: 40px 30px;
+		box-shadow: $secondary-shadow;
+		span,
+		h5,
+		p {
+			color: $color-white;
+		}
+	}
+	&.box-image {
+		padding: 35px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		span,
+		h5,
+		p {
+			color: $color-white;
+		}
+		h5 {
+			font-size: em(26px);
+		}
+		.xs-black-overlay {
+			z-index: -1;
+			opacity: .9;
+			&.bg-aqua {
+				background-color: $color-primary;
+			}
+			&.bg-purple {
+				background-color: $light-purple;
+			}
+			&.bg-blue {
+				background-color: $dodgerBlue;
+			}
+		}
+	}
+}
+
+.xs-what-we-do-box {
+	margin-top: -150px;
+	padding-bottom: 100px;
+}
+
+/* Service promo image version */
+.xs-what-we-do-image {
+	margin-top: -100px;
+	padding-bottom: 100px;
+}

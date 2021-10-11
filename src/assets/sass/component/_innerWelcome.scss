@@ -1,0 +1,41 @@
+.xs-banner-inner-section {
+	padding-top: 245px;
+	padding-bottom: 279px;
+	position: relative;
+}
+.xs-inner-banner-content {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	h2 {
+		font-size: em(52px);
+		font-weight: 700;
+		margin-bottom: 20px;
+		letter-spacing: -.2px;
+	}
+	p {
+		font-size: em(22px);
+		margin-bottom: 15px;
+		line-height: 1.5;
+	}
+}
+.xs-breadcumb {
+	li {
+		display: inline-block;
+		padding: 7px 22px;
+		font-weight: 400;
+		font-size: em(14px);
+		color: $color-white;
+		a {
+			color: $color-white;
+			@include transition;
+			&:hover {
+				color: $color-primary;
+			}
+		}
+	}
+}
+
+.badge-primary {
+	background-color: $light-purple;
+}

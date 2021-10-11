@@ -1,0 +1,63 @@
+.xs-single-team {
+	text-align: center;
+}
+.xs-team-content {
+	position: relative;
+	min-height: 140px;
+	padding-left: 10px;
+	padding-right: 10px;
+	@include flex-position(inline-flex, center, center);
+	flex-direction: column;
+	z-index: 1;
+	color: $color-white;
+	margin-top: -55px;
+	width: 100%;
+	.xs-svgs {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		filter: drop-shadow(8px 0px 16px rgba(0, 0, 0, 0.2));
+	}
+	h4 {
+		margin-bottom: 10px;
+		font-weight: 700;
+		font-size: em(22px);
+		letter-spacing: -.2px;
+	}
+	small {
+		font-size: em(14px);
+		letter-spacing: -.2px;
+	}
+}
+
+// svg fill list
+svg {
+	fill-rule: evenodd;
+}
+.fill-red {
+	fill: #fa575d;
+}
+.fill-purple {
+	fill: #9064bf;
+}
+.fill-blue {
+	fill: #379ff4;
+}
+.fill-orange {
+	fill: #fe813a;
+}
+.fill-riptide {
+	fill: #92d5ce;
+}
+.fill-yellow {
+	fill: #f7a900;
+}
+.fill-green {
+	fill: #2cc391;
+}
+.fill-navy-blue {
+	fill: #011b58;
+}

@@ -1,0 +1,55 @@
+/* Service slider section */
+.xs-service-slider-content {
+	color: $color-white;
+	padding-top: 35px;
+	h2 {
+		font-size: em(42px);
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+	.xs-unorder-list {
+		li {
+			margin-bottom: 20px;
+		}
+	}
+}
+.xs-title-underline {
+	font-size: em(82px);
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 0;
+	border-bottom: 4px solid $colorShamrock;
+	padding-bottom: 14px;
+}
+.xs-service-grow {
+	margin-bottom: 40px;
+	h4 {
+		font-size: em(28px);
+		font-weight: 600;
+		margin-bottom: 0;
+		padding-left: 15px;
+	}
+}
+
+$sliderMargin: 20px;
+
+.xs-single-slider-item {
+	box-shadow: $secondary-shadow;
+}
+
+.xs-single-item-slider {
+	position: relative;
+	.owl-nav {
+		position: absolute;
+		left: $sliderMargin;
+		bottom: 0;
+		.owl-prev,
+		.owl-next {
+			float: left;
+		}
+	}
+	.owl-stage-outer {
+		margin: $sliderMargin;
+		box-shadow: $secondary-shadow;
+	}
+}

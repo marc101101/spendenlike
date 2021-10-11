@@ -1,0 +1,41 @@
+.xs-about-v2 {
+	margin-bottom: -70px;
+}
+.xs-about-content {
+	padding-top: 130px;
+	padding-left: 55px;
+	padding-right: 90px;
+	.xs-heading {
+		.xs-title {
+			font-size: em(42px);
+			&::before {
+				font-size: 4.762em;
+				color: #f6f6f6;
+				top: -70px;
+				left: -180px;
+			}
+		}
+	}
+	p {
+		margin-bottom: 30px;
+	}
+	.xs-unorder-list li {
+		display: inline-block;
+		margin-right: 35px;
+		color: $color-secondary-v2;
+		font-size: em(12px);
+	}
+}
+.xs-about-content-img {
+	width: 95%;
+	min-height: 600px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	z-index: 2;
+}
+
+.xs-about-v2 ~ .xs-popularCauses-v2 {
+	padding-top: 170px;
+}

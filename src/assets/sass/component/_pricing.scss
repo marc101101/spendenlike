@@ -1,0 +1,116 @@
+.xs-pricing-section {
+	margin-top: -185px;
+	padding-bottom: 100px;
+}
+
+.xs-single-pricing-table {
+	text-align: center;
+	background-color: $color-white;
+    box-shadow: $primary-shadow;
+    .xs-list {
+        margin-bottom: 30px;
+    }
+    .btn {
+        background-color: $dodgerBlue;
+    }
+    &.pricing-red {
+        .xs-pricing-header::before {
+            background-color: rgba($colorWatermelon, 0.8);
+        }
+        .xs-pricing-title ,
+        .xs-list li i {
+            color: $colorWatermelon;
+        }
+        .btn {
+            background-color: $colorWatermelon;
+        }
+    }
+    &.pricing-green {
+        .xs-pricing-header::before {
+            background-color: rgba($colorShamrock, 0.8);
+        }
+        .xs-pricing-title ,
+        .xs-list li i {
+            color: $colorShamrock;
+        }
+        .btn {
+            background-color: $colorShamrock;
+        }
+    }
+}
+
+.xs-pricing-header {
+	position: relative;
+	padding: 90px 0;
+	color: $color-white;
+	&::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba($dodgerBlue, 0.8);
+	}
+	h2 {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 0;
+		line-height: 1;
+		font-size: em(72px);
+		font-weight: 700;
+		sub {
+			font-size: 0.222em;
+			font-weight: 400;
+			padding-left: 4px;
+		}
+	}
+}
+
+.xs-pricing-content {
+	padding: 40px;
+}
+
+.xs-pricing-title {
+	margin-bottom: 0;
+	font-weight: 700;
+	font-size: em(42px);
+	color: $dodgerBlue;
+	line-height: 1;
+	margin-bottom: 35px;
+}
+
+.xs-list {
+	li {
+		color: #677eb4;
+		padding-bottom: 12px;
+		margin-bottom: 12px;
+        position: relative;
+        i {
+            color: $dodgerBlue;
+            padding-right: 6px;
+        }
+		&::before {
+			position: absolute;
+			content: "";
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+			height: 1px;
+			width: 70px;
+			background-color: #efefef;
+        }
+        &.uncheked {
+            i {
+                color: $colorWatermelon;
+            }
+        }
+        &:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            &::before {
+                display: none;
+            }
+        }
+	}
+}

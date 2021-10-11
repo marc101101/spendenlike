@@ -1,0 +1,113 @@
+// funfact list
+.xs-funfact-list {
+	li {
+		display: inline-block;
+		width: 25%;
+		float: left;
+		p {
+			margin-bottom: 0;
+			.number-percentage-count {
+				font-size: em(42px);
+				color: $color-secondary;
+				font-weight: 300;
+				line-height: 1;
+			}
+			sup {
+				color: $color-primary;
+				bottom: 26px;
+				top: inherit;
+				left: 0;
+				font-size: em(16px);
+			}
+		}
+		span {
+			font-size: em(12px);
+		}
+	}
+}
+
+// funfacts
+.xs-funfact-section {
+	position: relative;
+	.xs-heading {
+		margin-bottom: 44px;
+	}
+}
+.xs-single-funFact {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	i {
+		display: block;
+		font-size: em(70px);
+	}
+	span {
+		font-weight: 700;
+		font-size: em(36px);
+		text-transform: uppercase;
+	}
+	small {
+		font-size: em(22px);
+		padding-left: 9px;
+	}
+	&.funFact-v2 {
+		span {
+			color: $colorShamrock;
+			font-size: em(62px);
+			line-height: 1;
+			margin-bottom: 9px;
+			display: inline-block;
+		}
+		small {
+			display: block;
+			padding-left: 0;
+			line-height: 1;
+		}
+	}
+}
+
+.xs-funfact-section-v2 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	padding: 175px 0;
+}
+
+/* For index version 3 fun fact */
+.xs-funfact-content-wraper {
+	padding: 160px 0;
+	.xs-heading {
+		margin-bottom: 60px;
+	}
+	.xs-title {
+		color: $color-white;
+		margin-bottom: 29px;
+	}
+	p {
+		color: #999999;
+	}
+}
+.xs-funFact-v3 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.xs-single-funFact-v3 {
+	[class*=" icon-"] {
+		color: $color-bondiBlue;
+		font-size: em(70px);
+		margin-right: 30px;
+	}
+	.number-percentage ,
+	.funfact-sign {
+		font-size: em(32px);
+		color: $color-white;
+		font-weight: 700;
+		line-height: 1;
+	}
+	small {
+		display: block;
+		font-size: em(22px);
+		color: #999999;
+	}
+}

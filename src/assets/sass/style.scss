@@ -1,0 +1,59 @@
+// var list
+@import 'variable/variable';
+
+// mixing
+@import 'mixing/mixing';
+
+// function
+@import 'function/function';
+
+// reset list
+@import 'reset/predefine';
+
+// element lis
+@import 'element/element';
+
+/* preloader */
+@import 'component/prelaoder';
+
+// component 
+@import 'component/nav';
+@import 'component/welcome';
+@import 'component/causes';
+@import 'component/popularCauses';
+@import 'component/other';
+@import 'component/featureBox';
+@import 'component/servicePromo';
+@import 'component/volunteer';
+@import 'component/event';
+@import 'component/partners';
+@import 'component/journal';
+@import 'component/footer';
+@import 'component/archive';
+@import 'component/funFact';
+@import 'component/team';
+@import 'component/callToAction';
+@import 'component/contact';
+@import 'component/children';
+@import 'component/donationForm';
+@import 'component/pricing';
+@import 'component/serviceMedia';
+@import 'component/serviceSlider';
+@import 'component/newsLetter';
+@import 'component/verticalTabs';
+@import 'component/portfolio';
+@import 'component/contactDetails';
+@import 'component/about';
+@import 'component/featureDetails';
+@import 'component/eventSingle';
+@import 'component/horizontal-tabs';
+@import 'component/colorSwitch';
+
+
+// inner page
+@import 'component/innerWelcome';
+@import 'component/singleBlog';
+@import 'component/sidebar';
+
+// reset list
+@import 'reset/inheritance';

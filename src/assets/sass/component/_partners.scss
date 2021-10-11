@@ -1,0 +1,41 @@
+.xs-partner-section {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	padding: 75px 0;
+}
+
+
+.xs-partner-content {
+	padding-top: 70px;
+	p {
+		font-size: em(16px);
+		margin-bottom: 50px;
+	}
+}
+
+
+.fundpress-partners {
+	text-align: center;
+	li {
+		display: inline-block;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		a {
+			@include equal-size-lineHeight(180px);
+			box-shadow: $secondary-shadow-2;
+			background-color: $color-white;
+			border-radius: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+		&:first-child ,
+		&:last-child {
+			display: block;
+			margin-right: 0px;
+		}
+		&:nth-child(4) {
+			margin-right: 0px;	
+		}
+	}
+}

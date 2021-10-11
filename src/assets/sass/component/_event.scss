@@ -1,0 +1,105 @@
+.xs-single-event {
+	min-height: 230px;
+	margin-bottom: 30px;
+	&.event-green {
+		.xs-black-overlay {
+			background-color: rgba($colorShamrock, .8);
+		}
+		.xs-event-content a:not(.btn) {
+			color: $colorShamrock;
+		}
+		.btn {
+			background-color: $colorShamrock;
+		}
+	}
+	&.event-purple {
+		.xs-black-overlay {
+			background-color: rgba($light-purple, .8);
+		}
+		.xs-event-content a:not(.btn) {
+			color: $light-purple;
+		}
+		.btn {
+			background-color: $light-purple;
+		}
+	}
+	&.event-red {
+		.xs-black-overlay {
+			background-color: rgba($colorWatermelon, .8);
+		}
+		.xs-event-content a:not(.btn) {
+			color: $colorWatermelon;
+		}
+		.btn {
+			background-color: $colorWatermelon;
+		}
+	}
+	&.event-blue {
+		.xs-black-overlay {
+			background-color: rgba($dodgerBlue, .8);
+		}
+		.xs-event-content a:not(.btn) {
+			color: $dodgerBlue;
+		}
+		.btn {
+			background-color: $dodgerBlue;
+		}
+	}
+	.xs-event-content {
+		margin-bottom: 0;
+		.btn {
+			padding: 13px 20px;
+		}
+	}
+}
+
+.xs-event-image {
+	position: relative;
+	.xs-entry-date {
+		color: $color-white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		text-align: center;
+		z-index: 1;
+	}
+	.xs-black-overlay {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+}
+
+.xs-entry-date {
+	.entry-date-day {
+		font-size: em(42px);
+		font-weight: 600;
+		margin-bottom: 0px;
+		line-height: 1;
+		display: block;
+	}
+	.entry-date-month {
+		font-size: em(18px);
+		margin-bottom: 0;
+		font-weight: 400;
+		text-transform: capitalize;
+		display: block;
+	}
+}
+
+.xs-event-content {
+	a:not(.btn) {
+		font-size: em(22px);
+		font-weight: 700;
+		color: $color-primary;
+		margin-bottom: 15px;
+		line-height: 1.5;
+		display: block;
+	}
+	p {
+		margin-bottom: 20px;
+	}
+	.xs-countdown-timer {
+		margin-bottom: 30px;
+	}
+}

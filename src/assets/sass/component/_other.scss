@@ -1,0 +1,72 @@
+// features text content
+.xs-text-content {
+	h2 {
+		@extend .xs-sub-title;
+		margin-bottom: 20px;
+	}
+	p {
+		margin-bottom: 30px;
+		color: $light-blue;
+	}
+	.btn {
+		font-size: em(14px);
+	}
+	blockquote {
+		margin-bottom: 40px;
+	}
+}
+.xs-feature-image {
+	box-shadow: $secondary-shadow;
+	& img {
+		filter: grayscale(0%);
+		@include transition;
+	}
+	&:hover {
+		img {
+			filter: grayscale(100%);
+		}
+	}
+}
+
+
+// video popup content
+.xs-video-popup-section {
+	margin-top: -137px;
+}
+.xs-video-popup-wraper {
+	position: relative;
+	box-shadow: $secondary-shadow;
+	.xs-video-popup-content  {
+		position: absolute;
+		@include center-position(50%);
+	}
+}
+
+// xs about feature
+.xs-about-feature {
+	h3 {
+		margin-bottom: 10px;
+		font-weight: 700;
+		color: $color-secondary;
+		font-size: em(26px);
+	}
+	p {
+		margin-bottom: 0;
+	}
+	.xs-unorder-list {
+		li {
+			font-size: em(16px);
+			line-height: 1;
+			margin-bottom: 13px;
+			&::before {
+				font-size: em(10px);
+				top: 3px;
+			}
+		}
+	}
+}
+
+/* Donation form image */
+.xs-donation-form-images {
+	box-shadow: $secondary-shadow;
+}

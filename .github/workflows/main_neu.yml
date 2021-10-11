@@ -1,0 +1,22 @@
+name: Upload Website - Neu
+
+on:
+  push:
+    branches: [neu]
+
+jobs:
+  deploy:
+    needs: [build]
+    runs-on: ubuntu-18.04
+    name: deploy to s3
+    steps:
+      - name: Deploys sources to s3 bucket
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_NEU }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: "eu-central-1" # optional: defaults to us-east-1
+          SOURCE_DIR: "src" # optional: defaults to entire repository

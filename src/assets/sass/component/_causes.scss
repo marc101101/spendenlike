@@ -1,0 +1,56 @@
+.xs-feature-coulmn {
+	margin-top: -100px;
+	padding-bottom: 100px;
+	position: relative;
+	z-index: 2;
+}
+
+.xs-single-causes {
+	background-color: $color-white;
+	box-shadow: $primary-shadow;
+	margin-bottom: 30px;
+	@include transition;
+	&:hover {
+		box-shadow: $secondary-shadow;
+	}
+}
+.xs-causes-header {
+	background-color: $color-primary;
+	padding: 34px 10px;
+	color: $color-white;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	h2 {
+		margin-bottom: 0;
+		font-size: em(26px);
+		font-weight: 700;
+	}
+	span {
+		position: absolute;
+		top: -35px;
+		right: -15px;
+		font-size: em(100px);
+		opacity: .1;
+	}
+}
+.xs-causes-footer {
+	text-align: center;
+	padding: 30px;
+	color: $color-secondary;
+	p {
+		margin-bottom: 0;
+	}
+	h2 {
+		line-height: 1;
+		margin-bottom: 15px;
+	}
+}
+
+.xs-causes-images {
+	box-shadow: $secondary-shadow;
+	margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

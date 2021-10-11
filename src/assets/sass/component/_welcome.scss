@@ -1,0 +1,122 @@
+.xs-welcome-content {
+	min-height: 900px;
+	@include background-content;
+	@include flex-position(flex, center, center);
+	text-align: center;
+	position: relative;
+}
+.xs-welcome-wraper {
+	position: relative;
+	z-index: 1;
+	h2 {
+		font-size: em(65px);
+		font-weight: 700;
+		letter-spacing: -1px;
+		margin-bottom: 30px;
+	}
+	p {
+		font-size: em(18px);
+		font-weight: 600;
+		margin-bottom: 40px;
+		line-height: 1.5;
+	}
+	.xs-btn-wraper {
+		a {
+			font-size: em(14px);
+		}
+		.badge {
+			font-size: em(14px);
+		}
+	}
+	&.banner-verion-2 {
+		p {
+			font-size: em(22px);
+			margin-bottom: 0px;
+		}
+		h2 {
+			font-size: em(72px);
+		}
+	}
+}
+
+.xs-banner-slider {
+	position: relative;
+	.owl-nav {
+		.owl-prev ,
+		.owl-next {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			@include transition;
+			& > * {
+				opacity: 0;
+				@include transition;
+			}
+		}
+		.owl-prev {
+			left: 0;
+		}
+		.owl-next {
+			right: 0;
+		}
+	}
+	&:hover {
+		.owl-prev {
+			left: 30px;
+			& > * {
+				opacity: 1;
+			}
+		}
+		.owl-next {
+			right: 30px;
+			& > * {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.xs-banner-slider {
+	.active {
+		.xs-welcome-wraper {
+			h2 , p , .xs-btn-wraper a {
+				animation: animLeft 1s ease 100ms both;
+				backface-visibility: hidden;
+			}
+			p {
+				animation-delay: 500ms;
+			}
+			.xs-btn-wraper {
+				a:first-child {
+					animation-delay: 800ms;
+				}
+				a:last-child {
+					animation-delay: 1200ms;
+				}
+			}
+		}
+	}
+}
+
+@-webkit-keyframes animLeft {
+	from {
+		opacity: 0;
+		transform: translate3d(50px, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+
+/* welcome version 2 */ 
+.xs-banner-slider {
+	&.owl-carousel {
+		.owl-item img {
+			width: auto;
+			margin: 0 auto;
+		}
+	}
+}

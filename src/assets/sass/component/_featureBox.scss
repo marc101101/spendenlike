@@ -1,0 +1,91 @@
+.xs-feature-box-fulid {
+	margin-top: -86px;
+}
+
+.xs-feature-content ,
+.xs-feature-content-v2 {
+	padding: 0 60px;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 150px;
+	h2 {
+		@extend .xs-sub-title;
+		font-size: em(46px);
+		margin-bottom: 0;
+		span {
+			color: $color-primary;
+		}
+	}
+}
+
+// for team page
+.xs-feature-content-v2 {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.xs-feature-box-wraper {
+	align-items: start;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.xs-feature-box {
+	$featureBoxPadding: 40px;
+	align-self: center;
+	background-color: $color-primary;
+	min-height: 310px;
+	padding: 80px $featureBoxPadding;
+	text-align: center;
+	@include flex-position(inline-flex,center,center);
+	&.highlight {
+		min-height: 450px;
+		background-color: #12b8bc;
+		padding: #{$featureBoxPadding * 2} $featureBoxPadding;
+	}
+	&.bg-purple {
+		background-color: $light-purple;
+	}
+	&.bg-purple,
+	&.bg-light-green {
+		.btn {
+			box-shadow: none;
+		}
+	}
+	&.bg-purple {
+		.btn {
+			background-color: #6d3ba3;
+		}
+	}
+	&.bg-light-green {
+		.btn {
+			background-color: #1ba074;
+		}
+	}
+}
+.xs-feature-box-content {
+	h3 {
+		@extend .xs-sub-title;
+		margin-bottom: 30px;
+		font-size: em(30px);
+		line-height: 1.3;
+	}
+	p {
+		color: $color-white;
+		margin-bottom: 32px;
+		font-size: em(16px);
+	}
+}
+
+// for mission page feature list
+.xs-fature-causes-deatils {
+	padding-left: 10px;
+	h3 {
+		font-size: em(42px);
+		color: $color-secondary;
+		font-weight: 700;
+		margin-bottom: 25px;
+		line-height: 1.3;
+		letter-spacing: -.2px;
+	}
+}

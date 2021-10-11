@@ -1,0 +1,74 @@
+/* half round size */
+$half-circle-size: 25px;
+
+/* contact inner page */
+.xs-widnow-wraper {
+	position: relative;
+	height: 220px;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin-bottom: 40px;
+	box-shadow: $primary-shadow;
+	.xs-window-back {
+		height: 100%;
+		width: 100%;
+	}
+	.xs-window-top {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 9;
+		@extend .transition;
+		img {
+			height: 100%;
+		}
+	}
+	.xs-window-nav {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 10;
+		@extend .transition;
+	}
+	.xs-window-opener {
+		background-color: $color-green;
+		color: $color-white;
+		height: $half-circle-size * 2;
+		width: $half-circle-size;
+		display: inline-block;
+		border-bottom-left-radius: $half-circle-size * 2;
+		border-top-left-radius: $half-circle-size * 2;
+		text-align: center;
+		line-height: $half-circle-size * 2;
+	}
+	&.active {
+		.xs-window-top {
+			left: -100%;
+		}
+		.xs-window-nav {
+			right: calc(100% - #{$half-circle-size});
+			transform: translateY(-50%) rotate(180deg);
+			.xs-window-opener {
+				background-color: $color-secondary;
+				i {
+					transform: rotate(-180deg);
+				}
+			}
+		}
+	}
+	.xs-map {
+		height: 100%;
+	}
+}
+
+.xs-contact-details {
+	.xs-unorder-list {
+		li {
+			margin-bottom: 5px;
+		}
+	}
+}

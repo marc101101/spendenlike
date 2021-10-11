@@ -1,0 +1,47 @@
+.xs-feature-text-content {
+	padding-top: 75px;
+	.xs-heading {
+		margin-bottom: 30px;
+		h2 {
+			font-size: em(22px);
+			font-weight: 400;
+			color: #555555;
+			position: relative;
+			z-index: 2;
+		}
+		.xs-title {
+			font-size: em(38px);
+			color: #222222;
+			margin-bottom: 17px;;
+			&::before {
+				font-size: 3.158em;
+				color: #f6f6f6;
+				top: -60px;
+			}
+		}
+		.xs-separetor {
+			margin-top: 0;
+			margin-bottom: 0;
+			width: 70px;
+			height: 2px;
+		}
+	}
+	p {
+		margin-bottom: 30px;
+	}
+}
+
+.xs-feature-image-box {
+	img {
+		box-shadow: $secondary-shadow;
+		border-radius: 10px;
+	}
+	position: relative;
+	&.image-1 {
+		text-align: right;
+		z-index: 1;
+	}
+	&.image-2 {
+		margin-top: -73px;
+	}
+}

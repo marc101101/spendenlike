@@ -1,0 +1,66 @@
+.xs-donation-form-wraper {
+	padding-left: 30px;
+	.xs-heading {
+		p {
+			margin-bottom: 25px;
+		}
+		span {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.xs-donation-form {
+	.xs-input-group {
+		margin-bottom: 30px;
+	}
+	label {
+		display: block;
+		margin-bottom: 15px;
+		color: $color-secondary;
+		font-weight: 700;
+		line-height: 1;
+	}
+	.form-control {
+		margin-bottom: 0;
+	}
+	input:not([type="submit"]) ,
+	select {
+		border: 2px solid #c8c8c8;
+		height: 50px !important;
+		border-radius: 0;
+		@include transition;
+		padding: 0 29px;
+		width: calc(100% - 55px);
+		&:focus {
+			background-color: $color-white;
+			border: 2px solid #c8c8c8;
+		}
+	}
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: #777777;
+		font-size: em(14px);
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+		color: #777777;
+		font-size: em(14px);
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+		color: #777777;
+		font-size: em(14px);
+	}
+	:-moz-placeholder { /* Firefox 18- */
+		color: #777777;
+		font-size: em(14px);
+	}
+	select {
+		appearance: none;
+		background-image: url(../images/arrow-green.png);
+		background-repeat: no-repeat;
+		background-position: right 27px center;
+		option {
+			color: #777777;
+			font-size: em(14px);
+		}
+	}
+}
